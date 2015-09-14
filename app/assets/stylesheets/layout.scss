@@ -1,0 +1,25 @@
+.navbar {
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 2px solid $primary-color;
+  margin-bottom: 0px;
+  .menu {
+    list-style-type: none;
+    font-size: 1.2em;
+    margin: 0;
+    li, a {
+      display: inline-block;
+      text-decoration: none;
+      line-height: 50px;
+      padding: 0 10px;
+    }
+  }
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}

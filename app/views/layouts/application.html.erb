@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fabien Oger</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="navbar">
+    <span class="navbar-brand">Fabien Oger</span>
+    <ul class="menu pull-right">
+      <li><a href="/">Home</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </header>
+  <main class="container-fluid">
+    <%= yield %>
+  </main>
+</body>
+</html>
