@@ -21,9 +21,21 @@
   }
 }
 
-.dev-back, .dev-front {
+.dev-back, .dev-front, .dev-tools {
+  text-align: center;
+  h4 {
+    margin-top: .8em;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
   i {
-    font-size: 1.3em;
+    font-size: 4em;
+    text-align: center;
+    border-radius: 50%;
+    background-color: orange;
+    color: #FFF;
+    width: 86px;
+    line-height: 86px;
   }
 }
 
