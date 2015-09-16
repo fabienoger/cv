@@ -1,7 +1,7 @@
 .navbar {
   border-radius: 0px;
   border: 0px;
-  border-bottom: 2px solid $primary-color;
+  box-shadow: 0 0 3px 0 $primary-color;
   margin-bottom: 0px;
   .menu {
     list-style-type: none;
@@ -10,10 +10,74 @@
     li, a {
       display: inline-block;
       text-decoration: none;
-      line-height: 50px;
+      line-height: 60px;
+      color: #FFF;
       padding: 0 10px;
     }
+    li {
+      padding: 0px;
+    }
+    a:hover {
+      height: 60px;
+      border-bottom: 2px solid #FFF;
+    }
   }
+}
+
+footer {
+  background-color: #666;
+  padding: 10px;
+  border-top: 2px solid #333;
+  p {
+    margin-bottom: 0px;
+    color: #cccccc;
+    text-align: center;
+    font-size: 1.1em;
+  }
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .index {
+    text-align: center;
+    .footer-link {
+      margin: 15px;
+      text-decoration: none;
+      font-size: 1.4em;
+      display: block;
+      color: #cccccc;
+      i {
+        color: $primary-color;
+        font-size: 1.4em;
+      }
+    }
+    .footer-link:hover {
+      color: #FFF;
+    }
+  }
+  .link-icone {
+    padding: 5px 0;
+    a {
+      color: #bcbcbc;
+      text-decoration: none;
+      font-size: 1.4em;
+      i {
+        font-size: 1.4em;
+        color: $primary-color;
+      }
+    }
+    a:hover {
+      color: #FFF;
+    }
+  }
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.align-right {
+  text-align: right;
 }
 
 .align-left {

@@ -3,11 +3,32 @@
   margin-left: -15px;
   margin-right: -15px;
   margin-bottom: 0px;
-  .photo {
-    img {
-      border-radius: 50%;
+  .link {
+    font-size: 1.2em;
+  }
+  .link-icone {
+    a {
+      font-size: 1.2em;
+      text-decoration: none;
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+    a:hover {
+      
     }
   }
+}
+
+.dev-back, .dev-front {
+  i {
+    font-size: 1.3em;
+  }
+}
+
+.bg-color, body {
+  background-color: #e8eaf6;
 }
 
 .competences, .exp-pro {
@@ -15,8 +36,8 @@
 }
 
 .exp-pro {
+  border-top: 2px solid $primary-color;
   .slide-exp-pro {
-    border: 2px solid $primary-color;
     height: 200px;
     font-size: 1.2em;
     ul {

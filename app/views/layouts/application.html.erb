@@ -5,18 +5,53 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar-material-deep-purple-500">
     <span class="navbar-brand">Fabien Oger</span>
     <ul class="menu pull-right">
-      <li><a href="/">Home</a></li>
-      <li><a href="/portfolio">Portfolio</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="/"><i class="fa fa-home fa-fw"></i>&nbsp; Accueil</a></li>
+      <li><a href="/portfolio"><i class="fa fa-book"></i>&nbsp; Portfolio</a></li>
+      <li><a href="/contact"><i class="fa fa-envelope"></i>&nbsp; Contact</a></li>
     </ul>
   </header>
   <main class="container-fluid">
     <%= yield %>
   </main>
+  <footer>
+    <div class="row">
+      <div class="align-center col-xs-4">
+        <div class="row link-icone">
+          <a target="_blank" href="https://github.com/">
+          <i class="fa fa-github"></i>&nbsp;
+            <!--<img src="/assets/Github-Flat.ico" width="40px" height="40px" />-->
+             GitHub
+          </a>
+        </div>
+        <div class="row link-icone">
+          <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i>&nbsp;
+            <!--<img src="/assets/Twitter.ico" width="40px" height="40px" />-->
+             Twitter
+          </a>
+        </div>
+        <div class="row link-icone">
+          <a target="_blank" href="https://www.linkedin.com/profile/view?id=AAMAABNCp4QB4jxI0GsinGdKAmrsJqjzYWTsmmo&trk=hp-identity-name"><i class="fa fa-linkedin"></i>&nbsp;
+            <!--<img src="/assets/Linkedin.ico" width="40px" height="40px" />-->
+             LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-4">
+
+      </div>
+      <div class="col-xs-4 index">
+        <a class="footer-link" href="/"><i class="fa fa-home fa-fw"></i>&nbsp; Accueil</a>
+        <a class="footer-link" href="/portfolio"><i class="fa fa-book"></i>&nbsp; Portfolio</a>
+        <a class="footer-link" href="/contact"><i class="fa fa-envelope-o"></i>&nbsp; Contact</a>
+      </div>
+    </div>
+    <p>© 2015 - Fabien Oger</p>
+  </footer>
 </body>
 </html>
