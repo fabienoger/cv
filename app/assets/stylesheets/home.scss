@@ -15,9 +15,6 @@
         margin: auto;
       }
     }
-    a:hover {
-      
-    }
   }
 }
 
@@ -32,10 +29,28 @@
     font-size: 4em;
     text-align: center;
     border-radius: 50%;
-    background-color: orange;
+//    background-color: orange;
     color: #FFF;
     width: 86px;
     line-height: 86px;
+  }
+}
+
+.dev-tools {
+  i {
+    background-color: #5BCF80;
+  }
+}
+
+.dev-back {
+  i {
+    background-color: #E25E5B;
+  }
+}
+
+.dev-front {
+  i {
+    background-color: #74BADE;
   }
 }
 

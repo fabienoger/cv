@@ -8,18 +8,17 @@
     font-size: 1.2em;
     margin: 0;
     li, a {
-      display: inline-block;
       text-decoration: none;
-      line-height: 60px;
       color: #FFF;
       padding: 0 10px;
     }
     li {
       padding: 0px;
+      transition: 0.5s;
+      background-color: transparent;
     }
-    a:hover {
-      height: 60px;
-      border-bottom: 2px solid #FFF;
+    li:hover {
+      background-color: rgba(255, 255, 255, 0.1);
     }
   }
 }
