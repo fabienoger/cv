@@ -3,6 +3,9 @@
   border: 0px;
 //  box-shadow: 0 0 3px 0 $primary-color;
   margin-bottom: 0px;
+  .navbar-collapse {
+    padding: 0px;
+  }
   .menu {
     list-style-type: none;
     font-size: 1.2em;
