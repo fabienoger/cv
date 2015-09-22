@@ -33,6 +33,10 @@
       margin-bottom: 30px;
     }
 
+    .alert {
+      margin-top: 20px;
+    }
+
     .btn.btn-flat.btn-info {
       color: $primary-color;
     }
@@ -41,7 +45,7 @@
       background-color: #e8eaf6;
     }
 
-    .form-control-wrapper .floating-label {
+    .form-control-wrapper .floating-label.label-textarea, .form-control-wrapper .floating-label {
       color: $primary-color;
     }
   }
