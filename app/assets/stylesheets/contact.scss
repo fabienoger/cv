@@ -1,0 +1,48 @@
+.contact {
+  padding-top: 30px;
+  h3 {
+    margin-top: 0px;
+    color: #345;
+    i {
+      color: #D0DADC;
+    }
+  }
+
+  .link-icone {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      i {
+        font-size: 1.5em;
+        background-color: $primary-color;
+        color: #FFF;
+        border-radius: 50%;
+        line-height: 40px;
+        width: 40px;
+        text-align: center;
+      }
+    }
+  }
+
+  form {
+    .form-group {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .btn.btn-flat.btn-info {
+      color: $primary-color;
+    }
+
+    .btn.btn-flat.btn-info:hover {
+      background-color: #e8eaf6;
+    }
+
+    .form-control-wrapper .floating-label {
+      color: $primary-color;
+    }
+  }
+}
