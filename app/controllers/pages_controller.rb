@@ -12,8 +12,9 @@ class PagesController < ApplicationController
   def create
     @message = Message.new nom: params[:name], email: params[:email], content: params[:message]
     if @message.save
-        flash[:success] = "L'email à bien été envoyé."
-        redirect_to '/contact'
+      UserMailer.contact_form(@message).deliver_now
+      flash[:success] = "L'email à bien été envoyé."
+      redirect_to '/contact'
     else
       render :contact
     end

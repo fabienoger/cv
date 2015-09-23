@@ -1,4 +1,6 @@
 fr:
   pages:
     contact:
+      name: "Vous devez remplir le champ nom."
+      email: "Vous devez remplir le champ e-mail."
       content: "Vous devez remplir le champ message."

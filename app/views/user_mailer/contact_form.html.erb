@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>From: <%= @message.nom %></h1>
+    <h3>E-mail: <%= @message.email %>.<br></h3>
+    <h5>Created_at: <%= @message.created_at %>
+    <h2>Content:</h2>
+    <p><%= @message.content %></p>
+  </body>
+</html>

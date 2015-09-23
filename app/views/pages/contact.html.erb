@@ -38,7 +38,7 @@
             <%= text_field_tag :name, @message.nom, class: "form-control" %>
             <% if @message.errors[:nom].first %>
               <div class="alert alert-danger">
-                <%= @message.errors[:nom].first %>
+                <%= t(".name") %>
               </div>
             <% end %>
           <% else %>
@@ -54,7 +54,7 @@
             <%= text_field_tag :email, @message.email, class: "form-control" %>
             <% if @message.errors[:email].first %>
               <div class="alert alert-danger">
-                <%= @message.errors[:email].first %>
+                <%= t(".email") %>
               </div>
             <% end %>
           <% else %>
