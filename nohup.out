@@ -1,0 +1,627 @@
+/home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find figaro-1.1.1 in any of the sources (Bundler::GemNotFound)
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/spec_set.rb:85:in `map!'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/spec_set.rb:85:in `materialize'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/definition.rb:140:in `specs'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/definition.rb:185:in `specs_for'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/definition.rb:174:in `requested_specs'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/environment.rb:18:in `requested_specs'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/runtime.rb:13:in `setup'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler.rb:127:in `setup'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/setup.rb:18:in `<top (required)>'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/www/cv/config/boot.rb:3:in `<top (required)>'
+	from /home/spodze/www/cv/bin/rails:7:in `require_relative'
+	from /home/spodze/www/cv/bin/rails:7:in `<top (required)>'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/rails.rb:28:in `load'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/rails.rb:28:in `call'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/command.rb:7:in `call'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client.rb:28:in `run'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/bin/spring:49:in `<top (required)>'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/binstub.rb:11:in `load'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/binstub.rb:11:in `<top (required)>'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/www/cv/bin/spring:13:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+/home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find figaro-1.1.1 in any of the sources (Bundler::GemNotFound)
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/spec_set.rb:85:in `map!'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/spec_set.rb:85:in `materialize'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/definition.rb:140:in `specs'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/definition.rb:185:in `specs_for'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/definition.rb:174:in `requested_specs'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/environment.rb:18:in `requested_specs'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/runtime.rb:13:in `setup'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler.rb:127:in `setup'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/setup.rb:18:in `<top (required)>'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/www/cv/config/boot.rb:3:in `<top (required)>'
+	from /home/spodze/www/cv/bin/rails:7:in `require_relative'
+	from /home/spodze/www/cv/bin/rails:7:in `<top (required)>'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/rails.rb:28:in `load'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/rails.rb:28:in `call'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/command.rb:7:in `call'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client.rb:28:in `run'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/bin/spring:49:in `<top (required)>'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/binstub.rb:11:in `load'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/binstub.rb:11:in `<top (required)>'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/www/cv/bin/spring:13:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+/home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find figaro-1.1.1 in any of the sources (Bundler::GemNotFound)
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/spec_set.rb:85:in `map!'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/spec_set.rb:85:in `materialize'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/definition.rb:140:in `specs'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/definition.rb:185:in `specs_for'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/definition.rb:174:in `requested_specs'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/environment.rb:18:in `requested_specs'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/runtime.rb:13:in `setup'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler.rb:127:in `setup'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/bundler-1.10.6/lib/bundler/setup.rb:18:in `<top (required)>'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/www/cv/config/boot.rb:3:in `<top (required)>'
+	from /home/spodze/www/cv/bin/rails:7:in `require_relative'
+	from /home/spodze/www/cv/bin/rails:7:in `<top (required)>'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/rails.rb:28:in `load'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/rails.rb:28:in `call'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/command.rb:7:in `call'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client.rb:28:in `run'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/bin/spring:49:in `<top (required)>'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/binstub.rb:11:in `load'
+	from /home/spodze/.rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/binstub.rb:11:in `<top (required)>'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/spodze/www/cv/bin/spring:13:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+=> Booting WEBrick
+=> Rails 4.2.4 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2015-09-22 18:30:51] INFO  WEBrick 1.3.1
+[2015-09-22 18:30:51] INFO  ruby 2.2.1 (2015-02-26) [x86_64-linux]
+[2015-09-22 18:30:51] INFO  WEBrick::HTTPServer#start: pid=5274 port=3000
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-22 18:30:53 +0200
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/spodze/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.2ms)
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/spodze/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (36.2ms)
+=> Booting WEBrick
+=> Rails 4.2.4 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+A server is already running. Check /home/spodze/www/cv/tmp/pids/server.pid.
+Exiting
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-22 18:31:08 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27064ms (Views: 27055.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-da9f5224e6dd083cdeff9a726c32a57ea22e9691e01cb4f1006bfae4b836532b.css?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/bootstrap-material-design/jquery.nouislider.self-14a408d2e3a637aad5505ea30dd659b99660f0beac7b100510f6abf6dd67728f.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/bootstrap-material-design/ripples.self-568842904f97a152a76ff3ed5995d21aabf5bd56e9f658b9929744dc581778ef.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/bootstrap-material-design/material.self-5aae70c7a657f0096b3b64d2f7c073024912d5c525488d25ccfc580590647a69.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/bootstrap-material-design/snackbar.self-020091f46c96844f46d9e6baa338d932f5cf4c9e998e7fe2136ab5d420d9b0c3.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/bootstrap-material-design/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/my_photo.jpg" for 127.0.0.1 at 2015-09-22 18:31:36 +0200
+
+
+Started GET "/assets/bootstrap-material-design/jquery.nouislider.self-14a408d2e3a637aad5505ea30dd659b99660f0beac7b100510f6abf6dd67728f.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/assets/bootstrap-material-design/material.self-5aae70c7a657f0096b3b64d2f7c073024912d5c525488d25ccfc580590647a69.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/assets/bootstrap-material-design/ripples.self-568842904f97a152a76ff3ed5995d21aabf5bd56e9f658b9929744dc581778ef.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/assets/bootstrap-material-design/snackbar.self-020091f46c96844f46d9e6baa338d932f5cf4c9e998e7fe2136ab5d420d9b0c3.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/assets/bootstrap-material-design/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/assets/my_photo.jpg" for 127.0.0.1 at 2015-09-22 18:31:37 +0200
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-09-22 18:31:49 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 94ms (Views: 83.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-09-22 18:31:49 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 118ms (Views: 117.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-22 20:18:49 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 143ms (Views: 142.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-da9f5224e6dd083cdeff9a726c32a57ea22e9691e01cb4f1006bfae4b836532b.css?body=1" for 127.0.0.1 at 2015-09-22 20:18:50 +0200
+
+
+Started GET "/assets/my_photo.jpg" for 127.0.0.1 at 2015-09-22 20:18:50 +0200
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-09-22 20:19:05 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 101ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-09-22 20:19:18 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 123ms (Views: 121.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2015-09-22 20:19:28 +0200
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wfOyVR3qtXTxbpsNkz6ACW3FoaaT5FHANlOmAjiJjz2F/WyMfz0e6U8TLWAaXv814JVydNw5Q5oZ8rkQuKnnQw==", "name"=>"", "email"=>"", "message"=>""}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered pages/contact.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 510ms (Views: 116.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2015-09-22 20:19:28 +0200
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wfOyVR3qtXTxbpsNkz6ACW3FoaaT5FHANlOmAjiJjz2F/WyMfz0e6U8TLWAaXv814JVydNw5Q5oZ8rkQuKnnQw==", "name"=>"", "email"=>"", "message"=>""}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered pages/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 117ms (Views: 109.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-22 20:19:50 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 107ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/my_photo.jpg" for 127.0.0.1 at 2015-09-22 20:19:51 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 136ms (Views: 135.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-da9f5224e6dd083cdeff9a726c32a57ea22e9691e01cb4f1006bfae4b836532b.css?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/bootstrap-material-design/snackbar.self-020091f46c96844f46d9e6baa338d932f5cf4c9e998e7fe2136ab5d420d9b0c3.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/bootstrap-material-design/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/bootstrap-material-design/material.self-5aae70c7a657f0096b3b64d2f7c073024912d5c525488d25ccfc580590647a69.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/bootstrap-material-design/ripples.self-568842904f97a152a76ff3ed5995d21aabf5bd56e9f658b9929744dc581778ef.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/bootstrap-material-design/jquery.nouislider.self-14a408d2e3a637aad5505ea30dd659b99660f0beac7b100510f6abf6dd67728f.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:11 +0200
+
+
+Started GET "/assets/application.self-da9f5224e6dd083cdeff9a726c32a57ea22e9691e01cb4f1006bfae4b836532b.css?body=1" for 127.0.0.1 at 2015-09-22 22:08:12 +0200
+
+
+Started GET "/assets/my_photo.jpg" for 127.0.0.1 at 2015-09-22 22:08:13 +0200
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2" for 127.0.0.1 at 2015-09-22 22:08:13 +0200
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-09-22 22:08:17 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 97ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-material-design/ripples.self-568842904f97a152a76ff3ed5995d21aabf5bd56e9f658b9929744dc581778ef.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/assets/bootstrap-material-design/jquery.nouislider.self-14a408d2e3a637aad5505ea30dd659b99660f0beac7b100510f6abf6dd67728f.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/assets/bootstrap-material-design/material.self-5aae70c7a657f0096b3b64d2f7c073024912d5c525488d25ccfc580590647a69.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/assets/bootstrap-material-design/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/assets/bootstrap-material-design/snackbar.self-020091f46c96844f46d9e6baa338d932f5cf4c9e998e7fe2136ab5d420d9b0c3.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/assets/application.self-da9f5224e6dd083cdeff9a726c32a57ea22e9691e01cb4f1006bfae4b836532b.css?body=1" for 127.0.0.1 at 2015-09-22 22:08:18 +0200
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/bootstrap-material-design/snackbar.self-020091f46c96844f46d9e6baa338d932f5cf4c9e998e7fe2136ab5d420d9b0c3.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/application.self-da9f5224e6dd083cdeff9a726c32a57ea22e9691e01cb4f1006bfae4b836532b.css?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/bootstrap-material-design/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/bootstrap-material-design/jquery.nouislider.self-14a408d2e3a637aad5505ea30dd659b99660f0beac7b100510f6abf6dd67728f.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/bootstrap-material-design/ripples.self-568842904f97a152a76ff3ed5995d21aabf5bd56e9f658b9929744dc581778ef.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/bootstrap-material-design/material.self-5aae70c7a657f0096b3b64d2f7c073024912d5c525488d25ccfc580590647a69.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/application.self-da9f5224e6dd083cdeff9a726c32a57ea22e9691e01cb4f1006bfae4b836532b.css?body=1" for 127.0.0.1 at 2015-09-22 22:08:25 +0200
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2" for 127.0.0.1 at 2015-09-22 22:08:27 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 99ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-da9f5224e6dd083cdeff9a726c32a57ea22e9691e01cb4f1006bfae4b836532b.css?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/bootstrap-material-design/snackbar.self-020091f46c96844f46d9e6baa338d932f5cf4c9e998e7fe2136ab5d420d9b0c3.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/bootstrap-material-design/jquery.nouislider.self-14a408d2e3a637aad5505ea30dd659b99660f0beac7b100510f6abf6dd67728f.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/bootstrap-material-design/ripples.self-568842904f97a152a76ff3ed5995d21aabf5bd56e9f658b9929744dc581778ef.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/bootstrap-material-design/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/bootstrap-material-design/material.self-5aae70c7a657f0096b3b64d2f7c073024912d5c525488d25ccfc580590647a69.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/assets/my_photo.jpg" for 127.0.0.1 at 2015-09-22 22:08:34 +0200
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-09-22 22:09:19 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 88ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/assets/bootstrap-material-design/snackbar.self-020091f46c96844f46d9e6baa338d932f5cf4c9e998e7fe2136ab5d420d9b0c3.js?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/assets/bootstrap-material-design/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/assets/bootstrap-material-design/ripples.self-568842904f97a152a76ff3ed5995d21aabf5bd56e9f658b9929744dc581778ef.js?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/assets/application.self-da9f5224e6dd083cdeff9a726c32a57ea22e9691e01cb4f1006bfae4b836532b.css?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/assets/bootstrap-material-design/jquery.nouislider.self-14a408d2e3a637aad5505ea30dd659b99660f0beac7b100510f6abf6dd67728f.js?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/assets/bootstrap-material-design/material.self-5aae70c7a657f0096b3b64d2f7c073024912d5c525488d25ccfc580590647a69.js?body=1" for 127.0.0.1 at 2015-09-22 22:09:20 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/assets/bootstrap-material-design/material.self-5aae70c7a657f0096b3b64d2f7c073024912d5c525488d25ccfc580590647a69.js?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/assets/bootstrap-material-design/snackbar.self-020091f46c96844f46d9e6baa338d932f5cf4c9e998e7fe2136ab5d420d9b0c3.js?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/assets/application.self-da9f5224e6dd083cdeff9a726c32a57ea22e9691e01cb4f1006bfae4b836532b.css?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/assets/bootstrap-material-design/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/assets/bootstrap-material-design/ripples.self-568842904f97a152a76ff3ed5995d21aabf5bd56e9f658b9929744dc581778ef.js?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/assets/bootstrap-material-design/jquery.nouislider.self-14a408d2e3a637aad5505ea30dd659b99660f0beac7b100510f6abf6dd67728f.js?body=1" for 127.0.0.1 at 2015-09-22 22:10:13 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-23 04:36:16 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 122ms (Views: 121.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 93ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-material-design/ripples.self-568842904f97a152a76ff3ed5995d21aabf5bd56e9f658b9929744dc581778ef.js?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/bootstrap-material-design/snackbar.self-020091f46c96844f46d9e6baa338d932f5cf4c9e998e7fe2136ab5d420d9b0c3.js?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/application.self-da9f5224e6dd083cdeff9a726c32a57ea22e9691e01cb4f1006bfae4b836532b.css?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/bootstrap-material-design/jquery.nouislider.self-14a408d2e3a637aad5505ea30dd659b99660f0beac7b100510f6abf6dd67728f.js?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/bootstrap-material-design/material.self-5aae70c7a657f0096b3b64d2f7c073024912d5c525488d25ccfc580590647a69.js?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/bootstrap-material-design/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-09-23 10:12:47 +0200
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2" for 127.0.0.1 at 2015-09-23 10:12:49 +0200
+
+
+Started POST "/contact" for 127.0.0.1 at 2015-09-23 10:12:53 +0200
+Processing by PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KFdMXtAFr0I6qJaJBC+nIlw0JyvfP8m24UO+djwpyyEjdCSsVamZkfax5VsJdv8F+2UvfriNEHlyzA0qmsMcqQ==", "name"=>"", "email"=>"", "message"=>""}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered pages/contact.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 92ms (Views: 87.8ms | ActiveRecord: 0.2ms)
