@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'home' => 'pages#home'
   get 'portfolio' => 'pages#portfolio'
   get 'contact' => 'pages#contact'

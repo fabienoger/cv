@@ -27,6 +27,9 @@
             <li><a href="/"><i class="fa fa-home fa-fw"></i>&nbsp; Accueil</a></li>
             <li><a href="/portfolio"><i class="fa fa-book"></i>&nbsp; Portfolio</a></li>
             <li><a href="/contact"><i class="fa fa-envelope"></i>&nbsp; Contact</a></li>
+            <% if user_signed_in? %>
+              <li><a rel="nofollow" data-method="delete" href="/users/sign_out"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
+            <% end %>
           </ul>
         </div>
       </div>

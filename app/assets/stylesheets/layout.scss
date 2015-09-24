@@ -78,6 +78,14 @@ footer {
   }
 }
 
+.btn.btn-flat.btn-info {
+  color: $primary-color;
+}
+
+.btn.btn-flat.btn-info:hover {
+  background-color: #e8eaf6;
+}
+
 * {
   font-family: 'Open Sans', sans-serif;
 }
