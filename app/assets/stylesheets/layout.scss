@@ -1,17 +1,33 @@
 .navbar {
+  .container-menu {
+    height: 50px;
+    width: 430px;
+    margin: 0 auto;
+  }
   border-radius: 0px;
+  width: 100%;
   border: 0px;
 //  box-shadow: 0 0 3px 0 $primary-color;
   margin-bottom: 0px;
+  .logo {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    background-color: red;
+  }
   .navbar-collapse {
     padding: 0px;
   }
   .menu {
     list-style-type: none;
+    display: inline-block;
     font-size: 1.2em;
-    margin: 0;
+    width: 245px;
+    margin: 0 auto;
+    height: 50px;
     li, a {
       text-decoration: none;
+      height: 50px;
       color: #FFF;
       padding: 0 10px;
     }
@@ -19,16 +35,35 @@
       padding: 0px;
       transition: 0.5s;
       background-color: transparent;
+      a {
+        line-height: 15px;
+      }
     }
-    li:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+  }
+  .social {
+    height: 50px;
+    display: inline-block;
+    .link-icone {
+      margin: 0 15px;
+      display: inline-block;
+      line-height: 50px;
+      a {
+        font-size: 1.3em;
+        color: #FFF;
+        text-decoration: none;
+        i {
+          line-height: 55px;
+          font-size: 1.3em;
+        }
+      }
+      a:hover {
+      }
     }
   }
 }
 
 main {
-  padding-bottom: 150px;
-  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 footer {
@@ -40,42 +75,6 @@ footer {
     color: #cccccc;
     text-align: center;
     font-size: 1.1em;
-  }
-  .row {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .index {
-    text-align: center;
-    .footer-link {
-      margin: 15px;
-      text-decoration: none;
-      font-size: 1.4em;
-      display: block;
-      color: #cccccc;
-      i {
-        color: $primary-color;
-        font-size: 1.4em;
-      }
-    }
-    .footer-link:hover {
-      color: #FFF;
-    }
-  }
-  .link-icone {
-    padding: 5px 0;
-    a {
-      color: #bcbcbc;
-      text-decoration: none;
-      font-size: 1.4em;
-      i {
-        font-size: 1.4em;
-        color: $primary-color;
-      }
-    }
-    a:hover {
-      color: #FFF;
-    }
   }
 }
 

@@ -14,60 +14,40 @@
   <body>
     <header class="navbar navbar-material-indigo-700">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <span class="navbar-brand">Fabien Oger</span>
+        <div class="logo">
         </div>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="menu nav navbar-nav navbar-right">
-            <li><a href="/"><i class="fa fa-home fa-fw"></i>&nbsp; Accueil</a></li>
-            <li><a href="/portfolio"><i class="fa fa-book"></i>&nbsp; Portfolio</a></li>
-            <li><a href="/contact"><i class="fa fa-envelope"></i>&nbsp; Contact</a></li>
+        <div class="container-menu">
+          <ul class="menu nav navbar-nav align-center">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contact">Contact</a></li>
             <% if user_signed_in? %>
               <li><a rel="nofollow" data-method="delete" href="/users/sign_out"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
             <% end %>
           </ul>
+          <div class="social">
+            <div class="link-icone">
+              <a target="_blank" href="https://github.com/fabienoger">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+            <div class=" link-icone">
+              <a target="_blank" href="https://twitter.com/FabOger">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+            <div class=" link-icone">
+              <a target="_blank" href="https://www.linkedin.com/profile/view?id=AAMAABNCp4QB4jxI0GsinGdKAmrsJqjzYWTsmmo&trk=hp-identity-name">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <%= yield %>
     <footer>
-      <div class="row">
-        <div class="align-center col-xs-4">
-          <div class="row link-icone">
-            <a target="_blank" href="https://github.com/">
-            <i class="fa fa-github"></i>&nbsp;
-              <!--<img src="/assets/Github-Flat.ico" width="40px" height="40px" />-->
-               GitHub
-            </a>
-          </div>
-          <div class="row link-icone">
-            <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i>&nbsp;
-              <!--<img src="/assets/Twitter.ico" width="40px" height="40px" />-->
-               Twitter
-            </a>
-          </div>
-          <div class="row link-icone">
-            <a target="_blank" href="https://www.linkedin.com/profile/view?id=AAMAABNCp4QB4jxI0GsinGdKAmrsJqjzYWTsmmo&trk=hp-identity-name"><i class="fa fa-linkedin"></i>&nbsp;
-              <!--<img src="/assets/Linkedin.ico" width="40px" height="40px" />-->
-               LinkedIn
-            </a>
-          </div>
-        </div>
-        <div class="col-xs-4">
-
-        </div>
-        <div class="col-xs-4 index">
-          <a class="footer-link" href="/"><i class="fa fa-home fa-fw"></i>&nbsp; Accueil</a>
-          <a class="footer-link" href="/portfolio"><i class="fa fa-book"></i>&nbsp; Portfolio</a>
-          <a class="footer-link" href="/contact"><i class="fa fa-envelope-o"></i>&nbsp; Contact</a>
-        </div>
-      </div>
-      <p>© 2015 - Fabien Oger</p>
+      <p>© Copyright développé by Fabien Oger</p>
     </footer>
   </body>
 </html>

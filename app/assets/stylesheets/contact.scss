@@ -1,6 +1,6 @@
 .contact {
   padding-top: 30px;
-  h3 {
+  h2 {
     margin-top: 0px;
     color: #345;
     i {
@@ -28,7 +28,9 @@
   }
 
   form {
+    text-align: center;
     .form-group {
+      text-align: left;
       margin-top: 30px;
       margin-bottom: 30px;
     }

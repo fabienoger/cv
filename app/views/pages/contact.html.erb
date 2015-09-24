@@ -1,88 +1,50 @@
 <main class="container">
   <div class="row contact">
-    <div class="col-md-6">
-      <h3><i class="fa fa-comments-o"></i>&nbsp; Social</h3>
-      <div class="link-icone">
-        <a target="_blank" href="">
-          <i class="fa fa-at"></i>&nbsp;
-          <span> fab-oger@live.fr</span>
-        </a>
-      </div>
-      <div class="link-icone">
-        <a target="_blank" href="https://github.com/">
-          <i class="fa fa-github"></i>
-          <span>&nbsp; GitHub</span>
-        </a>
-      </div>
-      <div class=" link-icone">
-        <a target="_blank" href="https://twitter.com/">
-          <i class="fa fa-twitter"></i>
-          <span>&nbsp; Twitter</span>
-        </a>
-      </div>
-      <div class=" link-icone">
-        <a target="_blank" href="https://www.linkedin.com/profile/view?id=AAMAABNCp4QB4jxI0GsinGdKAmrsJqjzYWTsmmo&trk=hp-identity-name">
-          <i class="fa fa-linkedin"></i>
-          <span>&nbsp; LinkedIn</span>
-        </a>
-      </div>
-    </div>
-    <%= form_tag '/contact', class: 'col-md-6', method: 'post' do %>
-      <h3><i class="fa fa-envelope-o"></i>&nbsp; Contactez moi</h3>
+    <%= form_tag '/contact', class: 'col-md-8 col-md-offset-2', method: 'post' do %>
+      <h2 class="align-center" >Contact</h2>
       <% if flash[:success] %>
         <div class="alert alert-success"><%= flash[:success] %></div>
       <% end %>
       <div class="form-group form-group-material-indigo-700">
-        <div class="form-control-wrapper">
-          <% if @message.nom %>
-            <%= text_field_tag :name, @message.nom, class: "form-control" %>
-            <% if @message.errors[:nom].first %>
-              <div class="alert alert-danger">
-                <%= t(".name") %>
-              </div>
-            <% end %>
-          <% else %>
-            <%= text_field_tag :name, @message.nom, class: "form-control empty" %>
+        <label class="control-label" for="nom" >Nom</label>
+        <% if @message.nom %>
+          <%= text_field_tag :name, @message.nom, class: "form-control", id: "nom" %>
+          <% if @message.errors[:nom].first %>
+            <div class="alert alert-danger">
+              <%= t(".name") %>
+            </div>
           <% end %>
-          <div class="floating-label">Nom</div>
-          <span class="material-input"></span>
-        </div>
+        <% else %>
+          <%= text_field_tag :name, @message.nom, class: "form-control empty", id: "nom" %>
+        <% end %>
       </div>
       <div class="form-group form-group-material-indigo-700">
-        <div class="form-control-wrapper">
+        <label class="control-label" for="email" >Adresse e-mail</label>
           <% if @message.email %>
-            <%= text_field_tag :email, @message.email, class: "form-control" %>
+            <%= text_field_tag :email, @message.email, class: "form-control", id: "email" %>
             <% if @message.errors[:email].first %>
               <div class="alert alert-danger">
                 <%= t(".email") %>
               </div>
             <% end %>
           <% else %>
-            <%= text_field_tag :email, @message.email, class: "form-control empty" %>
+            <%= text_field_tag :email, @message.email, class: "form-control empty", id: "email" %>
           <% end %>
-          <div class="floating-label">Adresse e-mail</div>
-          <span class="material-input"></span>
-        </div>
       </div>
       <div class="form-group form-group-material-indigo-700">
-        <div class="form-control-wrapper">
+        <label class="control-label" for="message" >Votre message</label>
           <% if @message.content %>
-            <%= text_area_tag :message, @message.content, class: "form-control", size: "24x6" %>
+            <%= text_area_tag :message, @message.content, class: "form-control", size: "24x6", id: "message" %>
             <% if @message.errors[:content].first %>
               <div class="alert alert-danger">
                 <%= t(".content") %>
               </div>
             <% end %>
           <% else %>
-            <%= text_area_tag :message, @message.content, class: "form-control empty", size: "24x6" %>
+            <%= text_area_tag :message, @message.content, class: "form-control empty", size: "24x6", id: "message" %>
           <% end %>
-          <div class="floating-label label-textarea">Votre message</div>
-          <span class="material-input"></span>
-        </div>
       </div>
-      <button type="submit" class="btn btn-flat btn-info">
-        <i class="fa fa-envelope"></i>&nbsp; Envoyer un mail
-      </button>
+      <button type="submit" class="align-center btn btn-fab btn-raised btn-material-indigo-700"><i class="mdi-content-mail"></i></button>
     <% end %>
   </div>
 </main>
