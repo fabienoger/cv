@@ -1,0 +1,33 @@
+<%= form_for(@depense) do |f| %>
+  <% if @depense.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@depense.errors.count, "error") %> prohibited this depense from being saved:</h2>
+
+      <ul>
+      <% @depense.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group form-group-material-indigo-700">
+    <%= f.label :title, class: "control-label", for: "title" %>
+    <%= f.text_field :title, class: "form-control", id: "title" %>
+  </div>
+  <div class="field form-group form-group-material-indigo-700">
+    <%= f.label :value, class: "control-label", for: "value" %>
+    <%= f.text_field :value, class: "form-control", id: "value" %>
+  </div>
+  <div class="field form-group form-group-material-indigo-700">
+    <%= f.label :date, class: "control-label", for: "date" %>
+    <%= f.date_select :date, class: "form-control", id: "date" %>
+  </div>
+  <div class="field form-group form-group-material-indigo-700">
+    <%= f.label :checked, class: "control-label", for: "checked" %>
+    <%= f.number_field :checked, class: "form-control", id: "checked" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Validate" , class: "btn btn-flat btn-info" %>
+  </div>
+<% end %>

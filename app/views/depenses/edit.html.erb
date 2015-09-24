@@ -1,0 +1,16 @@
+<main class="container">
+  <div class="row edit-depense">
+    <div class="col-md-8 col-md-offset-2">
+      <h1>Editing Depense</h1>
+
+      <%= render 'form' %>
+
+      <%= link_to @depense, class: "btn btn-flat btn-info" do %>
+        <i class="fa fa-eye"></i>&nbsp; Show
+      <% end %>
+      <%= link_to depenses_path, class: "btn btn-flat btn-warning" do %>
+        <i class="fa fa-arrow-left"></i>&nbsp; Back
+      <% end %>
+    </div>
+  </div>
+</main>

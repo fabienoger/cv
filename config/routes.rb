@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :depenses
   devise_for :users
   get 'home' => 'pages#home'
   get 'portfolio' => 'pages#portfolio'

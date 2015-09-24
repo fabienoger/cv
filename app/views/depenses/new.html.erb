@@ -1,0 +1,13 @@
+<main class="container">
+  <div class="row new-depense">
+    <div class="col-md-8 col-md-offset-2">
+      <h1>New Depense</h1>
+
+      <%= render 'form' %>
+
+      <%= link_to depenses_path, class: "btn btn-flat btn-warning" do %>
+        <i class="fa fa-arrow-left"></i>&nbsp; Back
+      <% end %>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  value: 1.5
+  date: 2015-09-24
+  checked: 1
+
+two:
+  title: MyString
+  value: 1.5
+  date: 2015-09-24
+  checked: 1
