@@ -2,10 +2,10 @@
   border-radius: 0px;
   margin-left: -15px;
   margin-right: -15px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   //box-shadow: 0 8px 17px 0 rgba(48, 63, 159, 0.2);
-  box-shadow: 0px;
-  border-bottom: 2px solid $primary-color;
+  //box-shadow: 0px;
+  //border-bottom: 2px solid $primary-color;
   .link {
     font-size: 1.2em;
   }
@@ -32,7 +32,7 @@
 }
 
 .dev-back:hover, .dev-front:hover, .dev-tools:hover {
-  border-bottom: 5px solid #303f9f;
+
 }
 
 .dev-tools {
@@ -62,6 +62,7 @@
 }
 
 .exp-pro {
+  padding-bottom: 20px;
   border-top: 2px solid $primary-color;
   .slide-exp-pro {
     height: 200px;
@@ -86,8 +87,14 @@
 }
 
 .formations {
+  margin-bottom: 20px;
   .title-formation {
+    font-size: 1.5em;
   }
    .slide-formation {
+      h5 {
+        font-size: 1.4em;
+      }
+      font-size: 1.3em;
     }
 }

@@ -1,3 +1,11 @@
+body {
+  background-image: url("footer_lodyas.png");
+}
+
+body main.container {
+  background-color: #FFF;
+}
+
 .navbar {
   .container-menu {
     height: 50px;
@@ -69,7 +77,6 @@ main {
 footer {
   background-color: #666;
   padding: 10px;
-  border-top: 2px solid #333;
   p {
     margin-bottom: 0px;
     color: #cccccc;
