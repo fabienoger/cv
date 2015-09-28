@@ -12,36 +12,53 @@
     <meta name="author" content="Fabien Oger">
   </head>
   <body>
-    <header class="navbar navbar-material-indigo-700">
+    <header class="navbar">
       <div class="container">
-        <div class="logo">
-        </div>
-        <div class="container-menu">
-          <ul class="menu nav navbar-nav align-center">
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <% if user_signed_in? %>
-              <li><a rel="nofollow" data-method="delete" href="/users/sign_out"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
-            <% end %>
-          </ul>
-          <div class="social">
-            <div class="link-icone">
-              <a target="_blank" href="https://github.com/fabienoger">
-                <i class="fa fa-github"></i>
-              </a>
-            </div>
-            <div class=" link-icone">
-              <a target="_blank" href="https://twitter.com/FabOger">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </div>
-            <div class=" link-icone">
-              <a target="_blank" href="https://www.linkedin.com/profile/view?id=AAMAABNCp4QB4jxI0GsinGdKAmrsJqjzYWTsmmo&trk=hp-identity-name">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </div>
+        <!--<div class="logo">
+        </div>-->
+        <ul class="menu nav align-center">
+          <li><a href="/">Accueil</a></li>
+          <i class="fa fa-circle"></i>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <i class="fa fa-circle"></i>
+          <li><a href="/contact">Contact</a></li>
+          <% if user_signed_in? %>
+            <li><a rel="nofollow" data-method="delete" href="/users/sign_out"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
+          <% end %>
+        </ul>
+        <div class="social">
+          <div class="link-icone">
+            <a href="https://twitter.com/FabOger">
+              <img src="/assets/twitter.png" />
+            </a>
           </div>
+          <div class="link-icone">
+            <a href="https://github.com/fabienoger">
+              <img src="/assets/Github.png" />
+            </a>
+          </div>
+          <div class="link-icone">
+            <a href="https://www.linkedin.com/profile/view?id=AAMAABNCp4QB4jxI0GsinGdKAmrsJqjzYWTsmmo&trk=hp-identity-name">
+              <img src="/assets/linkedin.png" />
+            </a>
+          </div>
+          <!--
+          <div class="link-icone">
+            <a target="_blank" href="https://github.com/fabienoger">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+          <div class=" link-icone">
+            <a target="_blank" href="https://twitter.com/FabOger">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+          <div class=" link-icone">
+            <a target="_blank" href="https://www.linkedin.com/profile/view?id=AAMAABNCp4QB4jxI0GsinGdKAmrsJqjzYWTsmmo&trk=hp-identity-name">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
+          -->
         </div>
       </div>
     </header>

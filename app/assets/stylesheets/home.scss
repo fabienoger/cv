@@ -24,15 +24,20 @@
     font-size: 4em;
     text-align: center;
     border-radius: 50%;
-//    background-color: orange;
     color: #FFF;
     width: 86px;
     line-height: 86px;
+    transition: all 0.8s;
   }
 }
 
 .dev-back:hover, .dev-front:hover, .dev-tools:hover {
-
+  i {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 }
 
 .dev-tools {
@@ -57,13 +62,9 @@
   background-color: #FFF;
 }
 
-.competences {
-  background-color: #c5cae9;
-}
-
 .exp-pro {
+  background-color: #f6f7fa;
   padding-bottom: 20px;
-  border-top: 2px solid $primary-color;
   .slide-exp-pro {
     height: 200px;
     font-size: 1.2em;
@@ -80,21 +81,30 @@
   h3 {
     margin-bottom: 20px;
   }
-  .slide-competences {
-    height: 262px;
-    border: 2px solid $primary-color;
-  }
 }
 
 .formations {
+  background-color: #f6f7fa;
   margin-bottom: 20px;
   .title-formation {
     font-size: 1.5em;
   }
-   .slide-formation {
-      h5 {
-        font-size: 1.4em;
-      }
-      font-size: 1.3em;
+ .slide-formation {
+    h5 {
+      font-size: 1.4em;
     }
+    font-size: 1.3em;
+    p {
+      text-align: left;
+      i {
+        text-align: center;
+        border-radius: 50%;
+        background-color: #5BCF80;
+        color: #FFF;
+        font-size: 1.2em;
+        width: 40px;
+        line-height: 40px;
+      }
+    }
+  }
 }

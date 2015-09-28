@@ -1,5 +1,6 @@
 .contact {
-  padding-top: 30px;
+  padding-bottom: 70px;
+  padding-top: 50px;
   h2 {
     margin-top: 0px;
     color: #345;
@@ -33,18 +34,27 @@
       text-align: left;
       margin-top: 30px;
       margin-bottom: 30px;
+      .control-label {
+        color: $primary-color;
+      }
+      .form-control {
+        background-image: linear-gradient($primary-color, $primary-color), linear-gradient(#d2d2d2, #d2d2d2);
+      }
     }
 
     .alert {
       margin-top: 20px;
     }
 
-    .btn.btn-flat.btn-info {
-      color: $primary-color;
+    .btn.btn-fab.btn-raised {
+      background-color: $primary-color;
+      color: #FFF;
+      transition: 0.5s;
     }
 
-    .btn.btn-flat.btn-info:hover {
-      background-color: #e8eaf6;
+    .btn.btn-fab.btn-raised:hover {
+      background-color: $secondary-color;
+      color: #FFF;
     }
 
     .form-control-wrapper .floating-label.label-textarea, .form-control-wrapper .floating-label {

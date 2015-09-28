@@ -3,20 +3,20 @@ body {
 }
 
 body main.container {
+  padding-top: 30px;
   background-color: #FFF;
 }
 
-.navbar {
-  .container-menu {
-    height: 50px;
-    width: 430px;
-    margin: 0 auto;
-  }
+header.navbar {
+  position: fixed;
   border-radius: 0px;
   width: 100%;
   border: 0px;
 //  box-shadow: 0 0 3px 0 $primary-color;
   margin-bottom: 0px;
+  z-index: 6;
+  background-color: #FFF !important;
+  box-shadow: 0 0 3px 0 #05bb93 !important;
   .logo {
     height: 50px;
     width: 50px;
@@ -28,58 +28,95 @@ body main.container {
   }
   .menu {
     list-style-type: none;
-    display: inline-block;
+    display: block;
     font-size: 1.2em;
-    width: 245px;
+//    width: 255px;
     margin: 0 auto;
-    height: 50px;
+    color: #05bb93;
     li, a {
+      display: inline-block;
       text-decoration: none;
-      height: 50px;
-      color: #FFF;
+      color: #05bb93;
       padding: 0 10px;
     }
     li {
       padding: 0px;
       transition: 0.5s;
       background-color: transparent;
+      i.fa {
+        font-size: 10px !important;
+        color: $primary-color;
+      }
       a {
-        line-height: 15px;
+        transition: 0.5s;
+        line-height: 50px;
+      }
+      a:hover {
+        background-color: #FFF;
+        color: $secondary-color;
       }
     }
   }
   .social {
-    height: 50px;
+    position: absolute;
+    right: 15px;
+//    top: 50px;
+    top: 0px;
     display: inline-block;
     .link-icone {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin-top: 5px;
+      a {
+        img {
+          transition: all 0.8s ease;
+          width: 40px;
+          height: 40px;
+        }
+      }
+      a:hover {
+        img {
+          /* Firefox */
+          -moz-transform: rotate(30deg);
+          /* WebKit */
+          -webkit-transform: rotate(30deg);
+          /* Opera */
+          -o-transform: rotate(30deg);
+          /* Standard */
+          transform: rotate(30deg);
+        }
+      }
+    }
+    /* OLD
+      .link-icone {
       margin: 0 15px;
       display: inline-block;
       line-height: 50px;
       a {
         font-size: 1.3em;
-        color: #FFF;
+        transition: 0.5s;
+        border: none;
+        color: #05bb93;
         text-decoration: none;
         i {
-          line-height: 55px;
+          line-height: 50px;
           font-size: 1.3em;
         }
       }
       a:hover {
       }
     }
+    */
   }
 }
 
-main {
-  padding-bottom: 50px;
-}
-
 footer {
-  background-color: #666;
+  background-color: $bg-color;
   padding: 10px;
   p {
     margin-bottom: 0px;
-    color: #cccccc;
+    color: $primary-color;
     text-align: center;
     font-size: 1.1em;
   }
@@ -107,4 +144,17 @@ footer {
 
 .align-center {
   text-align: center;
+}
+
+@media all and (max-width: 650px)
+{
+  .navbar {
+    .social {
+      position: relative;
+      text-align: center;
+      right: 0;
+      top: 0;
+      display: block;
+    }
+  }
 }
