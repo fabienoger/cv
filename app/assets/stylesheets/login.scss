@@ -1,5 +1,16 @@
 .login, .reset-password {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  background-color: #FFF;
   form {
+    .form-group {
+      .control-label {
+        color: $primary-color;
+      }
+      .form-control {
+        background-image: linear-gradient($primary-color, $primary-color), linear-gradient(#d2d2d2, #d2d2d2);
+      }
+    }
     a {
       margin-top: 15px;
       color: $primary-color;
