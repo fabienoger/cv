@@ -7,6 +7,7 @@
   .pretty.jumbotron {
     h1 {
       margin-bottom: 30px;
+      font-size: 3em;
     }
     p {
       margin-top: 10px;
@@ -39,14 +40,6 @@
   }
 
   .dev-back:hover, .dev-front:hover, .dev-tools:hover {
-    /*
-    i {
-      -moz-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-    */
   }
 
   .dev-tools {
@@ -72,9 +65,9 @@
   }
 
   .exp-pro {
-    padding-top: 20px;
+    padding-top: 30px;
     background-color: #CCC;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
     h2 {
       margin-bottom: 40px;
     }
@@ -90,8 +83,12 @@
 
       p {
         i {
-          color: $primary-color;
-          font-size: 30px;
+          background-color: $primary-color;
+          color: #FFF;
+          line-height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          text-align: center;
         }
       }
 
@@ -100,6 +97,11 @@
         margin-bottom: 20px;
         text-align: center;
       }
+
+      h6 {
+        margin: 30px 0;
+      }
+
       ul {
         padding-left: 0;
         list-style-type: none;
@@ -119,6 +121,9 @@
   }
 
   .formations {
+    h2 {
+      margin-bottom: 30px;
+    }
     background-color: #CCC;
     padding-bottom: 50px;
     padding-top: 20px;
@@ -126,7 +131,7 @@
       padding-right: 45px;
       padding-left: 45px;
       h5 {
-        font-size: 1.4em;
+        font-size: 1.2em;
         color: $bg-color;
         i {
           border-radius: 50%;
@@ -136,13 +141,13 @@
           text-align: center;
         }
       }
-      font-size: 1.3em;
       p {
-        text-align: left;
+        font-size: 1.1em;
+        text-align: center;
         i {
           text-align: center;
           border-radius: 50%;
-          background-color: #5BCF80;
+          background-color: $primary-color;
           color: #FFF;
           font-size: 1.2em;
           width: 40px;
