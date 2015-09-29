@@ -57,6 +57,49 @@ header.navbar {
       }
     }
   }
+  #show-admin-menu {
+    position: absolute;
+    text-align: center;
+    font-size: 1.3em;
+    top: 0px;
+    right: 0px;
+    background-color: $primary-color;
+    color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    line-height: 50px;
+    transition: all 0.5s;
+  }
+  #show-admin-menu:hover {
+    background-color: #FFF;
+    color: $primary-color;
+  }
+  #admin-menu {
+    transition: all 0.5s;
+    position: absolute;
+    right: -250px;
+    top: 50px;
+    list-style-type: none;
+    background-color: #EEEEEE;
+    padding-left: 0px;
+    li {
+      display: block;
+      a {
+        display: block;
+        text-decoration: none;
+        background-color: #EEEEEE;
+        color: $primary-color;
+        font-size: 1.3em;
+        padding: 15px 10px;
+        transition: 0.5s;
+        text-align: right;
+      }
+      a:hover {
+        background-color: $bg-color;
+      }
+    }
+  }
   .social {
     position: absolute;
     right: 15px;

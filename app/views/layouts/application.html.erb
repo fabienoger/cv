@@ -3,7 +3,6 @@
   <head>
     <title>Fabien Oger</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <meta name="description" content="Développeur web à Paris : HTML5, CSS3, Bootstrap, JavaScript, jQuery, PHP, Ruby, Ruby On Rails. ">
@@ -22,32 +21,39 @@
           <li><a href="/portfolio">Portfolio</a></li>
           <i class="fa fa-circle"></i>
           <li><a href="/contact">Contact</a></li>
-          <% if user_signed_in? %>
-            <li><a rel="nofollow" data-method="delete" href="/users/sign_out"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
-          <% end %>
         </ul>
-        <div class="social">
-          <div class="link-icone">
-            <a target="_blank" href="https://github.com/fabienoger">
-              <i class="fa fa-github"></i>
-            </a>
+        <% if user_signed_in? %>
+          <div id="show-admin-menu"><i class="fa fa-bars"></i></div>
+          <ul id="admin-menu">
+            <li><%= link_to new_depense_path do %>New depense&nbsp; <i class="fa fa-plus"></i><% end %></li>
+            <li><a href="/depenses">List depenses&nbsp; <i class="fa fa-list"></i></a></li>
+            <li><a rel="nofollow" data-method="delete" href="/users/sign_out">Logout&nbsp; <i class="fa fa-sign-out"></i></a></li>
+          </ul>
+        <% else %>
+          <div class="social">
+            <div class="link-icone">
+              <a target="_blank" href="https://github.com/fabienoger">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+            <div class=" link-icone">
+              <a target="_blank" href="https://twitter.com/FabOger">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+            <div class=" link-icone">
+              <a target="_blank" href="https://www.linkedin.com/profile/view?id=AAMAABNCp4QB4jxI0GsinGdKAmrsJqjzYWTsmmo&trk=hp-identity-name">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
           </div>
-          <div class=" link-icone">
-            <a target="_blank" href="https://twitter.com/FabOger">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </div>
-          <div class=" link-icone">
-            <a target="_blank" href="https://www.linkedin.com/profile/view?id=AAMAABNCp4QB4jxI0GsinGdKAmrsJqjzYWTsmmo&trk=hp-identity-name">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
+        <% end %>
       </div>
     </header>
     <%= yield %>
     <footer>
       <p>© Copyright développé by Fabien Oger</p>
     </footer>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </body>
 </html>
