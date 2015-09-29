@@ -14,6 +14,9 @@ main.portfolio {
         padding-left: 0px;
         list-style-type: none;
         li {
+          border: 2px solid $primary-color;
+          background-color: #dfdfdf;
+          padding: 10px;
           display: inline-block;
         }
       }
@@ -22,5 +25,10 @@ main.portfolio {
   div.thumbnail:hover {
     background-color: #dfdfdf;
     border-bottom: 4px solid $primary-color;
+    ul {
+      li {
+        background-color: #FFF;
+      }
+    }
   }
 }
