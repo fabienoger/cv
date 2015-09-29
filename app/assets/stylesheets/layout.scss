@@ -151,6 +151,9 @@ footer {
 
 @media all and (max-width: 650px)
 {
+  body main.container {
+    min-height: 500px;
+  }
   main.container.home {
     margin-top: 50px;
   }
