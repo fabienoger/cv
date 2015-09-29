@@ -1,8 +1,9 @@
 <main class="container depenses">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <p id="notice"><%= notice %></p>
-
+      <% if notice %>
+        <p class="alert alert-success" id="notice"><%= notice %></p>
+      <% end %>
       <h1>Listing Depenses</h1>
 
       <table class="table table-striped table-hover">

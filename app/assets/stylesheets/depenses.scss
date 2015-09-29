@@ -1,5 +1,16 @@
-main.container.depenses {
+main.container.depenses, main.container.new-depense, main.container.show-depense, main.container.edit-depense {
   background-color: #FFF;
   margin-top: 70px;
   margin-bottom: 20px;
+}
+
+main.container.new-depense, main.container.edit-depense {
+  form {
+    .control-label {
+      color: $primary-color;
+    }
+    .form-control {
+      background-image: linear-gradient($primary-color, $primary-color), linear-gradient($bg-color, $bg-color);
+    }
+  }
 }
