@@ -1,8 +1,9 @@
 .home {
-  color: $bg-color;
   .pretty.jumbotron {
     border-radius: 0px;
-    margin: 70px -15px 20px -15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 20px;
     //box-shadow: 0 8px 17px 0 rgba(48, 63, 159, 0.2);
     //box-shadow: 0px;
     //border-bottom: 2px solid $primary-color;
@@ -19,7 +20,6 @@
       margin-top: .8em;
       text-transform: uppercase;
       font-weight: 800;
-      color: $bg-color;
     }
     i {
       font-size: 4em;
@@ -68,11 +68,8 @@
   .exp-pro {
     margin-top: 20px;
     background-color: #f6f7fa;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     .slide-exp-pro {
-      h4 {
-        color: $bg-color;
-      }
       height: 200px;
       font-size: 1.2em;
       ul {
@@ -96,13 +93,13 @@
    .slide-formation {
       h5 {
         font-size: 1.4em;
-        color: $bg-color;
         i {
           border-radius: 50%;
-          color: #B7C6C9;
+          border: 4px solid #888888;
+          padding: 15px;
           width: 40px;
           line-height: 40px;
-          text-align: center;
+          text-align:center;
         }
       }
       font-size: 1.3em;
