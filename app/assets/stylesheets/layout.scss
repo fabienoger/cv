@@ -16,37 +16,45 @@ header.navbar {
   margin-bottom: 0px;
   z-index: 6;
   background-color: #FFF !important;
-  box-shadow: 0 0 3px 0 #05bb93 !important;
+  box-shadow: 0 0 3px 0 $primary-color !important;
   .logo {
     height: 50px;
     width: 50px;
     margin: 0 auto;
     background-color: red;
   }
-  .navbar-collapse {
-    padding: 0px;
-  }
   .menu {
     list-style-type: none;
     display: block;
     font-size: 1.2em;
-//    width: 255px;
     margin: 0 auto;
-    color: #05bb93;
+    color: $primary-color;
+    height: 50px;
+
+    div.menu-circle {
+      display: inline-block;
+      background-color: $primary-color;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      margin: 20px 5px;
+    }
+    i.fa {
+      font-size: 10px;
+      line-height: 50px;
+    }
     li, a {
       display: inline-block;
       text-decoration: none;
-      color: #05bb93;
+      color: $primary-color;
       padding: 0 10px;
     }
     li {
       padding: 0px;
       transition: 0.5s;
+      margin-right: 5px;
+      margin-left: 5px;
       background-color: transparent;
-      i.fa {
-        font-size: 10px !important;
-        color: $primary-color !important;
-      }
       a {
         transition: 0.5s;
         line-height: 50px;
@@ -71,10 +79,12 @@ header.navbar {
     line-height: 50px;
     transition: all 0.5s;
   }
+
   #show-admin-menu:hover {
     background-color: #FFF;
     color: $primary-color;
   }
+
   #admin-menu {
     transition: all 0.5s;
     position: absolute;
@@ -83,6 +93,7 @@ header.navbar {
     list-style-type: none;
     background-color: #EEEEEE;
     padding-left: 0px;
+
     li {
       display: block;
       a {
@@ -106,30 +117,8 @@ header.navbar {
 //    top: 50px;
     top: 0px;
     display: inline-block;
-  /*.link-icone {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-top: 5px;
-      a {
-        img {
-          transition: all 0.8s ease;
-          width: 40px;
-          height: 40px;
-        }
-      }
-      a:hover {
-        img {
-          -moz-transform: rotate(30deg);
-          -webkit-transform: rotate(30deg);
-          -o-transform: rotate(30deg);
-          transform: rotate(30deg);
-        }
-      }
-    }
-*/
     .link-icone {
-      margin: 5px 5px;
+      margin: 12.5px 5px;
       display: inline-block;
       a {
         font-size: 1.3em;
@@ -140,12 +129,12 @@ header.navbar {
         text-decoration: none;
         display: inline-block;
         border-radius: 50%;
-        width: 40px;
-        line-height: 40px;
+        width: 25px;
+        line-height: 25px;
         text-align: center;
         i {
-          font-size: 1.3em;
-          line-height: 40px;
+          font-size: 1em;
+          line-height: 25px;
           text-align: center;
         }
       }
