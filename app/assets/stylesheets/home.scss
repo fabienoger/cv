@@ -82,6 +82,12 @@
       height: 200px;
       font-size: 1.2em;
 
+      p.societe {
+        img {
+          margin-right: 5px;
+        }
+      }
+
       p {
         i {
           color: $primary-color;
