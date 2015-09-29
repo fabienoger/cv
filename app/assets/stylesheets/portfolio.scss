@@ -5,4 +5,22 @@ main.portfolio {
   h1 {
     color: $bg-color;
   }
+  div.thumbnail {
+    transition: 0.5s;
+    transition-property: background-color;
+    border-radius: 0px;
+    div.caption {
+      ul {
+        padding-left: 0px;
+        list-style-type: none;
+        li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  div.thumbnail:hover {
+    background-color: #dfdfdf;
+    border-bottom: 4px solid $primary-color;
+  }
 }
