@@ -151,8 +151,23 @@ footer {
 
 @media all and (max-width: 650px)
 {
-  .navbar {
-    .social {
+  header.navbar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+  }
+  main.container.home {
+    margin-top: 50px;
+  }
+  main.container.portfolio {
+    margin-top: 100px;
+  }
+  main.container.contact {
+    margin-top: 100px;
+  }
+  header.navbar {
+    div.social {
       position: relative;
       text-align: center;
       right: 0;
