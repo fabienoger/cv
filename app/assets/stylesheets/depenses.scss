@@ -14,3 +14,15 @@ main.container.new-depense, main.container.edit-depense {
     }
   }
 }
+
+main.container.depenses {
+  table.table {
+    tbody {
+      tr {
+        td {
+          line-height: 50px;
+        }
+      }
+    }
+  }
+}

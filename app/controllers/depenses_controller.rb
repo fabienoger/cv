@@ -6,6 +6,11 @@ class DepensesController < ApplicationController
   # GET /depenses.json
   def index
     @depenses = Depense.all
+    @total = 0
+    @depenses.each do |dep|
+      @total += dep.value
+    end
+    @solde = User.find(1).solde
   end
 
   # GET /depenses/1
@@ -31,6 +36,9 @@ class DepensesController < ApplicationController
       if @depense.save
         format.html { redirect_to @depense, notice: 'Depense was successfully created.' }
         format.json { render :show, status: :created, location: @depense }
+        me = User.find(1)
+        me.solde = me.solde - @depense.value
+        me.save
       else
         format.html { render :new }
         format.json { render json: @depense.errors, status: :unprocessable_entity }
