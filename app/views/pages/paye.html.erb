@@ -1,0 +1,14 @@
+<div class="container paye">
+  <div class="row">
+    <% if flash[:error] %>
+      <div class="alert alert-danger"><%= flash[:error] %></div>
+    <% end %>
+    <%= form_tag '/pages/paye', class: "align-center col-md-8 col-md-offset-2", method: 'post' do %>
+      <div class="form-group align-left">
+        <label class="control-label" for="paye">Enter some money</label>
+        <input type="number" name="paye" id="paye" class="form-control">
+      </div>
+      <button type="submit" class="inline-block btn btn-fab btn-raised"><i class="mdi-action-trending-up"></i></button>
+    <% end %>
+  </div>
+</div>

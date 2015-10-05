@@ -9,6 +9,34 @@ class PagesController < ApplicationController
     @message = Message.new
   end
 
+  def paye
+    if user_signed_in?
+    else
+      redirect_to '/users/sign_in'
+    end
+  end
+
+  def addPaye
+    if user_signed_in?
+      if params[:paye] != ' ' && params[:paye] != ''
+        me = User.find(1)
+        me.solde += params[:paye].to_i
+        if me.save
+          flash[:success] = "Account credited (+ #{params[:paye]} €)"
+          redirect_to '/depenses'
+        else
+          flash[:error] = "Sum not save"
+          redirect_to '/pages/paye'
+        end
+      else
+        flash[:error] = "Invalid sum"
+        redirect_to '/pages/paye'
+      end
+    else
+      redirect_to '/users/sign_in'
+    end
+  end
+
   def create
     @message = Message.new nom: params[:name], email: params[:email], content: params[:message]
     if @message.save

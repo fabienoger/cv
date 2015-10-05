@@ -5,6 +5,10 @@
         <br />
         <p class="alert alert-success" id="notice"><%= notice %></p>
       <% end %>
+      <% if flash[:success] %>
+        <br />
+        <p class="alert alert-success" id="notice"><%= flash[:success] %></p>
+      <% end %>
       <h1>Listing Depenses</h1>
       <div class="row">
         <div class="col-md-6">
@@ -68,9 +72,10 @@
       </table>
       <br>
 
-      <%= link_to new_depense_path, class: "btn btn-flat btn-info" do %>
+      <%= link_to new_depense_path, class: "btn btn-flat btn-warning" do %>
         <i class="fa fa-plus"></i>&nbsp; New Depense
       <% end %>
+      <a href="/pages/paye" class="btn btn-flat btn-info"><i class="fa fa-usd"></i>&nbsp; Add Some Money</a>
     </div>
   </div>
 </main>

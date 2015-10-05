@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
   resources :depenses
   devise_for :users
-  get 'home' => 'pages#home'
-  get 'portfolio' => 'pages#portfolio'
-  get 'contact' => 'pages#contact'
+  get '/home' => 'pages#home'
+  get '/portfolio' => 'pages#portfolio'
+  get '/contact' => 'pages#contact'
 
+  get '/pages/paye' => 'pages#paye'
+
+  post '/pages/paye' => 'pages#addPaye'
   post 'contact' => 'pages#create'
 
   root 'pages#home'

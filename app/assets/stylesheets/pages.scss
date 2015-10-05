@@ -1,3 +1,20 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+div.container.paye {
+  background-color: #FFF;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  min-height: 500px;
+
+  form {
+    padding-top: 50px;
+    button.btn.btn-fab {
+      background-color: $primary-color;
+      transition: all 0.5s;
+      text-align: center;
+      color: #FFF;
+    }
+    button.btn.btn-fab:hover {
+      background-color: $secondary-color;
+    }
+  }
+}
