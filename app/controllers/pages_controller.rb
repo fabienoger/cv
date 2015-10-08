@@ -20,7 +20,7 @@ class PagesController < ApplicationController
     if user_signed_in?
       if params[:paye] != ' ' && params[:paye] != ''
         me = User.find(1)
-        me.solde += params[:paye].to_i
+        me.solde = params[:paye].to_f + me.solde.to_f
         if me.save
           flash[:success] = "Account credited (+ #{params[:paye]} €)"
           redirect_to '/depenses'
