@@ -19,3 +19,7 @@
 /config/application.yml
 
 *.swp
+
+# Ignore application configuration
+/config/application.yml
+/nohup.out
