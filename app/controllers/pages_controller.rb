@@ -2,6 +2,14 @@ class PagesController < ApplicationController
   def home
   end
 
+  def admin
+    if user_signed_in?
+      @message = Message.all
+    else
+      redirect_to '/'
+    end
+  end
+
   def portfolio
   end
 

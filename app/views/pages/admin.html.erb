@@ -1,0 +1,15 @@
+<main class="container">
+  <div class="row admin">
+    <div class="col-md-12">
+      <h2>Liste des messages</h2>
+      <% @message.each do |m| %>
+        <div class="message shadow-z-2">
+          <h3>Nom : <%= m.nom %></h3>
+          <p>From : <%= m.email %></p>
+          <p>Message :</p>
+          <p class="content"><%= m.content %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</main>

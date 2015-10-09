@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/contact' => 'pages#contact'
 
   get '/pages/paye' => 'pages#paye'
+  get '/admin' => 'pages#admin'
 
   post '/pages/paye' => 'pages#addPaye'
   post 'contact' => 'pages#create'

@@ -1,0 +1,14 @@
+div.row.admin {
+  margin-top: 70px;
+  background-color: #FFF;
+  div.message {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #EEEEEE;
+    p.content {
+      border: 2px solid $bg-color;
+      background-color: #FFF;
+      padding: 20px;
+    }
+  }
+}
