@@ -4,7 +4,7 @@ class PagesController < ApplicationController
 
   def admin
     if user_signed_in?
-      @message = Message.all
+      @message = Message.all.reverse
     else
       redirect_to '/'
     end
