@@ -2,6 +2,17 @@ class PagesController < ApplicationController
   def home
   end
 
+<<<<<<< HEAD
+=======
+  def admin
+    if user_signed_in?
+      @message = Message.all.reverse
+    else
+      redirect_to '/'
+    end
+  end
+
+>>>>>>> f32d625aeddd22bbee76055e3997e42fbccf3fd4
   def portfolio
   end
 
