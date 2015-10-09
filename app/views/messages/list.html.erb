@@ -8,6 +8,9 @@
           <p>From : <%= m.email %></p>
           <p>Message :</p>
           <p class="content"><%= m.content %></p>
+          <%= form_tag "/messages/#{m.id}", method: "delete" do %>
+            <button type="submit" class="btn btn-danger"><i class="fa fa-eye-slash"></i> &nbsp; Delete</button>
+          <% end %>
         </div>
       <% end %>
     </div>

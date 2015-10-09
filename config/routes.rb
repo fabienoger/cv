@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'messages/list'
+
   resources :depenses
   devise_for :users
   get '/home' => 'pages#home'
@@ -6,7 +8,9 @@ Rails.application.routes.draw do
   get '/contact' => 'pages#contact'
 
   get '/pages/paye' => 'pages#paye'
-  get '/admin' => 'pages#admin'
+
+  get '/messages' => 'messages#list'
+  delete '/messages/:id' => 'messages#destroy'
 
   post '/pages/paye' => 'pages#addPaye'
   post 'contact' => 'pages#create'

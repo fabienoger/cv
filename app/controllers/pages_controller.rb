@@ -2,14 +2,6 @@ class PagesController < ApplicationController
   def home
   end
 
-  def admin
-    if user_signed_in?
-      @message = Message.all
-    else
-      redirect_to '/'
-    end
-  end
-
   def portfolio
   end
 
@@ -46,7 +38,7 @@ class PagesController < ApplicationController
   end
 
   def create
-    @message = Message.new nom: params[:name], email: params[:email], content: params[:message]
+    @message = Message.new nom: params[:name], email: params[:email], content: params[:message], checked: 0
     if @message.save
       UserMailer.contact_form(@message).deliver_later
       flash[:success] = "L'email à bien été envoyé."
