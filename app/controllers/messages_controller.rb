@@ -1,7 +1,7 @@
 class MessagesController < ApplicationController
   def list
     if user_signed_in?
-      @message = Message.where(checked: 0)
+      @message = Message.where(checked: 0).reverse
     else
       redirect_to '/'
     end
