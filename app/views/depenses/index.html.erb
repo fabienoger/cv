@@ -36,24 +36,22 @@
       <div class="row title align-center">
         <div class="col-md-2 col-sm-2 col-xs-2">Title</div>
         <div class="col-md-2 col-sm-2 col-xs-2">Value</div>
-        <div class="col-md-2 col-sm-2 col-xs-2">Date</div>
-        <div class="col-md-2 col-sm-2 col-xs-2">Checked</div>
+        <div class="col-md-4 col-sm-4 col-xs-4">Date</div>
         <div class="col-md-2 col-sm-2 col-xs-2">Edit</div>
-        <div class="col-md-2 col-sm-2 col-xs-2">Destroy</div>
+        <div class="col-md-2 col-sm-2 col-xs-2">Dest</div>
       </div>
       <% @depenses.each do |depense| %>
         <div class="row depense align-center">
           <div class="col-md-2 col-sm-2 col-xs-2"><%= depense.title %></div>
           <div class="col-md-2 col-sm-2 col-xs-2"><%= depense.value %></div>
-          <div class="col-md-2 col-sm-2 col-xs-2"><%= depense.date %></div>
-          <div class="col-md-2 col-sm-2 col-xs-2"><%= depense.checked %></div>
+          <div class="col-md-4 col-sm-4 col-xs-4"><%= depense.date %></div>
           <div class="col-md-2 col-sm-2 col-xs-2">
-            <%= link_to edit_depense_path(depense), class: "btn btn-flat btn-info" do %>
+            <%= link_to edit_depense_path(depense), class: "" do %>
               <i class="fa fa-pencil"></i>
             <% end %>
           </div>
           <div class="col-md-2 col-sm-2 col-xs-2">
-            <%= link_to depense, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-flat btn-danger" do %>
+            <%= link_to depense, method: :delete, data: { confirm: 'Are you sure?' }, class: "destroy" do %>
               <i class="fa fa-trash"></i>
             <% end %>
           </div>
