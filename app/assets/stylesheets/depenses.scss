@@ -16,11 +16,18 @@ main.container.new-depense, main.container.edit-depense {
 }
 
 main.container.depenses {
+  div.title-depense {
+    border-bottom: 2px solid #009688;
+    border-top: 2px solid #009688;
+    padding: 15px 0;
+  }
+
   div.depense {
+    border-bottom: 2px solid #009688;
     div {
       line-height: 50px;
     }
-    a {
+    a.action-depense {
       display: inline-block;
     }
     a.destroy {
