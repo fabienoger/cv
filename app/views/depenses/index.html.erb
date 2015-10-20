@@ -11,6 +11,16 @@
       <% end %>
       <h1>Listing Depenses</h1>
       <div class="row">
+        <div class="col-xs-6">
+          <%= link_to new_depense_path, class: "btn btn-raised btn-warning" do %>
+            <i class="fa fa-plus"></i>&nbsp; New Depense
+          <% end %>
+        </div>
+        <div class="col-xs-6">
+          <a href="/pages/paye" class="btn btn-raised btn-info"><i class="fa fa-usd"></i>&nbsp; Add Money</a>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-6">
           <div class="panel panel-primary">
             <div class="panel-heading">
@@ -32,7 +42,6 @@
           </div>
         </div>
       </div>
-
       <div class="row title-depense align-center">
         <div class="col-md-2 col-sm-2 col-xs-2">Title</div>
         <div class="col-md-2 col-sm-2 col-xs-2">Value</div>
