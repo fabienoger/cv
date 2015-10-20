@@ -1,6 +1,6 @@
 <main class="container depenses">
   <div class="row">
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-12 col-xs-12">
       <% if notice %>
         <br />
         <p class="alert alert-success" id="notice"><%= notice %></p>
@@ -33,49 +33,32 @@
         </div>
       </div>
 
-      <table class="table table-striped table-hover responsive-table">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Value</th>
-            <th>Date</th>
-            <th>Checked</th>
-            <th colspan="3"></th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <% @depenses.each do |depense| %>
-            <tr>
-              <td><%= depense.title %></td>
-              <td><%= depense.value %></td>
-              <td><%= depense.date %></td>
-              <td><%= depense.checked %></td>
-              <td>
-                <%= link_to depense, class: "btn btn-flat btn-info" do %>
-                  <i class="fa fa-eye"></i>&nbsp; Show
-                <% end %>
-              </td>
-              <td>
-                <%= link_to edit_depense_path(depense), class: "btn btn-flat btn-info" do %>
-                  <i class="fa fa-pencil"></i>&nbsp; Edit
-                <% end %>
-              </td>
-              <td>
-                <%= link_to depense, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-flat btn-danger" do %>
-                  <i class="fa fa-trash"></i>&nbsp; Destroy
-                <% end %>
-              </td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-      <br>
-
-      <%= link_to new_depense_path, class: "btn btn-flat btn-warning" do %>
-        <i class="fa fa-plus"></i>&nbsp; New Depense
+      <div class="row title align-center">
+        <div class="col-md-2 col-sm-2 col-xs-2">Title</div>
+        <div class="col-md-2 col-sm-2 col-xs-2">Value</div>
+        <div class="col-md-2 col-sm-2 col-xs-2">Date</div>
+        <div class="col-md-2 col-sm-2 col-xs-2">Checked</div>
+        <div class="col-md-2 col-sm-2 col-xs-2">Edit</div>
+        <div class="col-md-2 col-sm-2 col-xs-2">Destroy</div>
+      </div>
+      <% @depenses.each do |depense| %>
+        <div class="row depense align-center">
+          <div class="col-md-2 col-sm-2 col-xs-2"><%= depense.title %></div>
+          <div class="col-md-2 col-sm-2 col-xs-2"><%= depense.value %></div>
+          <div class="col-md-2 col-sm-2 col-xs-2"><%= depense.date %></div>
+          <div class="col-md-2 col-sm-2 col-xs-2"><%= depense.checked %></div>
+          <div class="col-md-2 col-sm-2 col-xs-2">
+            <%= link_to edit_depense_path(depense), class: "btn btn-flat btn-info" do %>
+              <i class="fa fa-pencil"></i>
+            <% end %>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-2">
+            <%= link_to depense, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-flat btn-danger" do %>
+              <i class="fa fa-trash"></i>
+            <% end %>
+          </div>
+        </div>
       <% end %>
-      <a href="/pages/paye" class="btn btn-flat btn-info"><i class="fa fa-usd"></i>&nbsp; Add Some Money</a>
     </div>
   </div>
 </main>
