@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :technologies
+  resources :projects
   get 'messages/list'
 
   resources :depenses
