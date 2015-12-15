@@ -16,6 +16,7 @@ class ProjectsController < ApplicationController
   # GET /projects/new
   def new
     @project = Project.new
+    @technologies = Technology.all
   end
 
   # GET /projects/1/edit
