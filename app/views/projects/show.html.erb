@@ -1,44 +1,48 @@
-<p id="notice"><%= notice %></p>
+<main class="container project">
+  <div class="row show">
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
+    <p>
+      <strong>Title:</strong>
+      <%= @project.title %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @project.description %>
+    </p>
 
-<p>
-  <strong>Github:</strong>
-  <%= @project.github %>
-</p>
+    <p>
+      <strong>Github:</strong>
+      <%= @project.github %>
+    </p>
 
-<p>
-  <strong>Twitter:</strong>
-  <%= @project.twitter %>
-</p>
+    <p>
+      <strong>Twitter:</strong>
+      <%= @project.twitter %>
+    </p>
 
-<p>
-  <strong>Url:</strong>
-  <%= @project.url %>
-</p>
+    <p>
+      <strong>Url:</strong>
+      <%= @project.url %>
+    </p>
 
-<p>
-  <strong>Startdate:</strong>
-  <%= @project.startdate %>
-</p>
+    <p>
+      <strong>Startdate:</strong>
+      <%= @project.startdate %>
+    </p>
 
-<p>
-  <strong>Enddate:</strong>
-  <%= @project.enddate %>
-</p>
+    <p>
+      <strong>Enddate:</strong>
+      <%= @project.enddate %>
+    </p>
 
-<p>
-  <strong>Abstract:</strong>
-  <%= @project.abstract %>
-</p>
+    <p>
+      <strong>Abstract:</strong>
+      <%= @project.abstract %>
+    </p>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+    <%= link_to 'Edit', edit_project_path(@project), class: "btn btn-raised btn-info" %> |
+    <%= link_to 'Back', projects_path, class: "btn btn-raised btn-danger" %>
+  </div>
+</main>
