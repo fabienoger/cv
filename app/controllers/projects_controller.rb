@@ -25,7 +25,9 @@ class ProjectsController < ApplicationController
   # POST /projects
   # POST /projects.json
   def create
+#    @project = Project.new(project_params)
     @project = Project.new(project_params)
+    puts "#{@project}".red
 
     respond_to do |format|
       if @project.save
@@ -63,6 +65,7 @@ class ProjectsController < ApplicationController
   end
 
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_project
       @project = Project.find(params[:id])
@@ -70,6 +73,6 @@ class ProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
-      params.require(:project).permit(:title, :description, :github, :twitter, :url, :startdate, :enddate, :abstract)
+      params.require(:project).permit(:title, :description, :github, :twitter, :url, :startdate, :enddate, :abstract, :picture)
     end
 end
