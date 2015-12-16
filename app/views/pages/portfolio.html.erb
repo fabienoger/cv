@@ -14,8 +14,21 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-    </div>
+    <% @projects.each do |project| %>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="/assets/capture_fabienoger.com.png">
+          <div class="caption">
+            <h2><%= project.title %></h2>
+            <ul>
+              <li><img src="/assets/ror_logo.png" width="20px" height="20px">&nbsp; Ruby On Rails</li>
+              <li><img src="/assets/boostrap_logo.svg" width="20px" height="20px">&nbsp; Bootstrap</li>
+            </ul>
+            <a href="<%= project.url %>" class="btn btn-flat btn-info">Site &nbsp; <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    <% end %>
     <div class="col-md-4">
     </div>
   </div>

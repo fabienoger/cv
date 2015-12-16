@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def portfolio
+    @projects = Project.all
   end
 
   def contact
