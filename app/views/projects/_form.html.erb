@@ -48,11 +48,9 @@
         <%= f.text_field :abstract %>
       </div>
       <div class="field">
-        <select>
-          <% @technologies.each do |tech| %>
-            <option value="<%= tech.name %>"><%= tech.name %></option>
-          <% end %>
-        </select>
+        <% @technologies.each do |tech| %>
+          <input type="checkbox" name="technologies[]" id="<%= tech.name %>" value="<%= tech.id %>"><label for="<%= tech.name %>"><%= tech.name %></label>
+        <% end %>
       </div>
       <div class="field">
         <%= f.label :picture %></br>

@@ -44,6 +44,9 @@
       </p>
     </div>
     <div class="col-md-6 col-xs-12">
+      <% @technologies.each do |technology| %>
+        <p><%= technology.name %></p>
+      <% end %>
       <%= image_tag @project.picture.url(:medium) %>
     </div>
 
