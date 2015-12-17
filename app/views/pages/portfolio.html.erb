@@ -18,7 +18,7 @@
       <% @links = ProjectTechnology.where(:project_id => project.id) %>
       <div class="col-md-4">
         <div class="thumbnail">
-          <img src="/assets/capture_fabienoger.com.png">
+          <%= image_tag project.picture.url(:medium) %>
           <div class="caption">
             <h2><%= project.title %></h2>
             <ul>
