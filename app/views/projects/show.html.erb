@@ -1,12 +1,12 @@
 <main class="container project">
   <div class="row show">
+    <p id="notice"><%= notice %></p>
+    <h1 class="align-center"><%= @project.title %></h1>
     <div class="col-md-6 col-xs-12">
-      <p id="notice"><%= notice %></p>
+      <div>
+        <%= image_tag @project.picture.url(:medium) %>
+      </div>
 
-      <p>
-        <strong>Title:</strong>
-        <%= @project.title %>
-      </p>
 
       <p>
         <strong>Description:</strong>
@@ -27,9 +27,10 @@
         <strong>Url:</strong>
         <%= @project.url %>
       </p>
-
+    </div>
+    <div class="col-md-6 col-xs-12">
       <p>
-        <strong>Startdate:</strong>
+      <strong>Startdate:</strong>
         <%= @project.startdate %>
       </p>
 
@@ -42,12 +43,12 @@
         <strong>Abstract:</strong>
         <%= @project.abstract %>
       </p>
-    </div>
-    <div class="col-md-6 col-xs-12">
-      <% @technologies.each do |technology| %>
-        <p><%= technology.name %></p>
-      <% end %>
-      <%= image_tag @project.picture.url(:medium) %>
+      <h3>Technologies</h3>
+      <ul>
+       <% @technologies.each do |technology| %>
+          <li><%= technology.name %></li>
+        <% end %>
+      </ul>
     </div>
 
     <%= link_to 'Edit', edit_project_path(@project), class: "btn btn-raised btn-info" %> |

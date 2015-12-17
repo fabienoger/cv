@@ -4,4 +4,16 @@ main.container.project {
   div.row {
     padding: 15px;
   }
+
+  div.row.index {
+    table {
+      tbody td, thead th {
+        padding: 0 10px;
+
+        a.fa {
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

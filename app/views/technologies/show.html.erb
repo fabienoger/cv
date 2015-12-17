@@ -1,7 +1,7 @@
 <main class="container technology">
   <div class="row show">
     <p id="notice"><%= notice %></p>
-
+    <div><%= image_tag @technology.picture.url(:thumb) %></div>
     <p>
       <strong>Name:</strong>
       <%= @technology.name %>
