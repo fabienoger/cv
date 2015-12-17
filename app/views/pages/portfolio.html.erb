@@ -1,33 +1,22 @@
 <main class="container portfolio">
   <h1 class="align-center">Portfolio</h1>
   <div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <img src="/assets/capture_fabienoger.com.png">
-        <div class="caption">
-          <h2>fabienoger.com</h2>
-          <ul>
-            <li><img src="/assets/ror_logo.png" width="20px" height="20px">&nbsp; Ruby On Rails</li>
-            <li><img src="/assets/boostrap_logo.svg" width="20px" height="20px">&nbsp; Bootstrap</li>
-          </ul>
-          <a href="http://www.fabienoger.com" class="btn btn-flat btn-info">Site &nbsp; <i class="fa fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
     <% @projects.each do |project| %>
       <% @links = ProjectTechnology.where(:project_id => project.id) %>
       <div class="col-md-4">
         <div class="thumbnail">
-          <%= image_tag project.picture.url(:medium) %>
+          <h2 class="align-center"><%= project.title %></h2>
+          <a class="project-picture" href="<%= project.url %>" target="_blank"><%= image_tag project.picture.url(:medium) %></a>
           <div class="caption">
-            <h2><%= project.title %></h2>
             <ul>
               <% @links.each do |link| %>
                 <% technology = Technology.find(link.technology_id) %>
                 <li><%= image_tag technology.picture.url(:thumb), size: "20" %>&nbsp; <span><%= technology.name %></span></li>
               <% end %>
             </ul>
-            <a href="<%= project.url %>" target="_blank" class="btn btn-flat btn-info">Site &nbsp; <i class="fa fa-arrow-right"></i></a>
+            <a href="<%= project.github %>" class="btn btn-fab btn-primary"><i class="fa fa-github"></i></a>
+            <a href="<%= project.url %>" target="_blank" class="btn btn-raised btn-primary">Site &nbsp; <i class="fa fa-globe"></i></a>
+            <a href="/project/<%= project.id %>" class="btn btn-raised btn-primary">Détails &nbsp; <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
       </div>

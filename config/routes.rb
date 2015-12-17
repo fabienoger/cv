@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get '/portfolio' => 'pages#portfolio'
   get '/contact' => 'pages#contact'
 
+  get '/project/:id' => 'pages#project'
+
   get '/pages/paye' => 'pages#paye'
 
   get '/messages' => 'messages#list'

@@ -18,3 +18,35 @@ div.container.paye {
     }
   }
 }
+
+main.container.show-project {
+  background-color: #FFF;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  min-height: 500px;
+
+  div.row {
+
+    ul {
+      padding-left: 0px;
+      list-style-type: none;
+      li {
+        transition: all 0.5s;
+        background-color: #e4e4e4; // #dfdfdf
+        padding: 0 12px;
+        display: inline-block;
+        border-radius: 16px;
+        height: 32px;
+        margin: 5px;
+
+        span {
+          font-size: 13px;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 0.6);
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}

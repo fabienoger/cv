@@ -2,6 +2,15 @@ class PagesController < ApplicationController
   def home
   end
 
+  def project
+    @project = Project.find(params[:id])
+    links = ProjectTechnology.where(:project_id => @project.id)
+    @technologies = []
+    links.each do |link|
+      @technologies.push(Technology.find(link.technology_id))
+    end
+  end
+
   def portfolio
     @projects = Project.all
   end

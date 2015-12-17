@@ -1,19 +1,23 @@
 main.portfolio {
   margin-top: 70px;
   margin-bottom: 20px;
-  background-color: #FFF;
+  background-color: #fff;
+
   h1 {
     color: $bg-color;
   }
   div.thumbnail {
-    transition: 0.5s;
+    transition: all 0.5s;
     transition-property: background-color;
     border-radius: 0px;
+    background-color: #CCCCCC;
+
     div.caption {
       ul {
         padding-left: 0px;
         list-style-type: none;
         li {
+          transition: all 0.5s;
           background-color: #e4e4e4; // #dfdfdf
           padding: 0 12px;
           display: inline-block;
@@ -36,7 +40,7 @@ main.portfolio {
     border-bottom: 4px solid $primary-color;
     ul {
       li {
-        background-color: #FFF;
+        background-color: #FFF !important;
       }
     }
   }
