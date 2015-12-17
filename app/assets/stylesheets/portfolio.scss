@@ -14,10 +14,19 @@ main.portfolio {
         padding-left: 0px;
         list-style-type: none;
         li {
-          border: 2px solid $primary-color;
-          background-color: #dfdfdf;
-          padding: 10px;
+          background-color: #e4e4e4; // #dfdfdf
+          padding: 0 12px;
           display: inline-block;
+          border-radius: 16px;
+          height: 32px;
+          margin: 5px;
+
+          span {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.6);
+            line-height: 32px;
+          }
         }
       }
     }
