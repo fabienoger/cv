@@ -19,6 +19,10 @@ I use the gem Figaro so you need to run :
 figaro install
 ```
 And set the environment(s) variable(s) at config/application.yml
+And of course launch rails application
+```shell
+rails s
+```
 
 ## Module
 ### Expenditure
