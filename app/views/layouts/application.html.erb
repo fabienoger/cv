@@ -19,8 +19,8 @@
         <ul class="menu nav align-center">
           <li><a href="/">Accueil</a></li>
           <i class="fa fa-circle"></i>
-<!--          <li><a href="/portfolio">Portfolio</a></li>
-          <i class="fa fa-circle"></i>-->
+          <li><a href="/portfolio">Portfolio</a></li>
+          <i class="fa fa-circle"></i>
           <li><a href="/contact">Contact</a></li>
         </ul>
         <% if user_signed_in? %>
@@ -28,7 +28,9 @@
           <ul id="admin-menu">
             <li><a href="/messages">Messages&nbsp; <i class="fa fa-envelope"></i></a></li>
             <li><%= link_to new_depense_path do %>New depense&nbsp; <i class="fa fa-plus"></i><% end %></li>
-            <li><a href="/depenses">List depenses&nbsp; <i class="fa fa-list"></i></a></li>
+            <li><a href="/depenses">Depenses&nbsp; <i class="fa fa-list"></i></a></li>
+            <li><a href="/projects">Projects&nbsp; <i class="fa fa-book"></i></a></li>
+            <li><a href="/technologies">Technologies&nbsp; <i class="fa fa-terminal"></i></a></li>
             <li><a rel="nofollow" data-method="delete" href="/users/sign_out">Logout&nbsp; <i class="fa fa-sign-out"></i></a></li>
           </ul>
         <% else %>

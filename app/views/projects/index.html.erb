@@ -1,0 +1,45 @@
+<main class="container project">
+  <div class="row index">
+    <p id="notice"><%= notice %></p>
+
+    <h1>Listing Projects</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Github</th>
+          <th>Twitter</th>
+          <th>Url</th>
+          <th>Startdate</th>
+          <th>Enddate</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @projects.each do |project| %>
+          <tr>
+            <td><%= image_tag project.picture.url(:thumb) %></td>
+            <td><%= project.title %></td>
+            <td><%= project.description[0..20] %></td>
+            <td><a href="<%= project.github %>" target="_blank" ><i class="fa fa-github fa-3x"></i></a></td>
+            <td><a href="<%= project.twitter %>" target="_blank" ><i class="fa fa-twitter fa-3x"></i></a></td>
+            <td><a href="<%= project.url %>" target="_blank" ><i class="fa fa-link fa-3x"></i></a></td>
+            <td><%= project.startdate %></td>
+            <td><%= project.enddate %></td>
+            <td><%= link_to '', project, :class => "fa fa-eye fa-3x" %></td>
+            <td><%= link_to '', edit_project_path(project), :class => "fa fa-pencil fa-3x" %></td>
+            <td><%= link_to '', project, method: :delete, data: { confirm: 'Are you sure?' }, :class => "fa fa-trash fa-3x" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Project', new_project_path, class: "btn btn-raised btn-success" %>
+  </div>
+</main>

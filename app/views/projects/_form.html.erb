@@ -1,0 +1,64 @@
+<div class="">
+  <%= form_for(@project) do |f| %>
+    <% if @project.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+        <ul>
+        <% @project.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="col-md-6 col-xs-12">
+      <div class="field">
+        <%= f.label :title %><br>
+        <%= f.text_field :title %>
+      </div>
+      <div class="field">
+        <%= f.label :description %><br>
+        <%= f.text_area :description %>
+      </div>
+      <div class="field">
+        <%= f.label :github %><br>
+        <%= f.text_field :github %>
+      </div>
+      <div class="field">
+        <%= f.label :twitter %><br>
+        <%= f.text_field :twitter %>
+      </div>
+      <div class="field">
+        <%= f.label :url %><br>
+        <%= f.text_field :url %>
+      </div>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <div class="field">
+        <%= f.label :startdate %><br>
+        <%= f.text_field :startdate %>
+      </div>
+      <div class="field">
+        <%= f.label :enddate %><br>
+        <%= f.text_field :enddate %>
+      </div>
+      <div class="field">
+        <%= f.label :abstract %><br>
+        <%= f.text_field :abstract %>
+      </div>
+      <div class="field">
+        <% @technologies.each do |tech| %>
+          <input type="checkbox" name="technologies[]" id="<%= tech.name %>" value="<%= tech.id %>"><label for="<%= tech.name %>"><%= tech.name %></label>
+        <% end %>
+      </div>
+      <div class="field">
+        <%= f.label :picture %></br>
+        <%= f.file_field :picture, as: :file %>
+      </div>
+    </div>
+    <div class="actions">
+      <input type="submit" class="btn btn-raised btn-success">
+    </div>
+  <% end %>
+</div>

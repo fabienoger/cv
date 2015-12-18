@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :technologies
+  resources :projects
   get 'messages/list'
 
   resources :depenses
@@ -6,6 +8,8 @@ Rails.application.routes.draw do
   get '/home' => 'pages#home'
   get '/portfolio' => 'pages#portfolio'
   get '/contact' => 'pages#contact'
+
+  get '/project/:id' => 'pages#project'
 
   get '/pages/paye' => 'pages#paye'
 

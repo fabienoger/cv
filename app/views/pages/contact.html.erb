@@ -1,7 +1,7 @@
 <main class="container contact">
   <div class="row">
     <%= form_tag '/contact', class: 'col-md-8 col-md-offset-2', method: 'post' do %>
-      <h1 class="align-center" >Contact</h1>
+      <h1 class="align-center"><i class="fa fa-envelope fa-left"></i>Contact</h1>
       <% if flash[:success] %>
         <div class="alert alert-success"><%= flash[:success] %></div>
       <% end %>

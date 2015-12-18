@@ -1,0 +1,57 @@
+<main class="container project">
+  <div class="row show">
+    <p id="notice"><%= notice %></p>
+    <h1 class="align-center"><%= @project.title %></h1>
+    <div class="col-md-6 col-xs-12">
+      <div>
+        <%= image_tag @project.picture.url(:medium) %>
+      </div>
+
+
+      <p>
+        <strong>Description:</strong>
+        <%= @project.description %>
+      </p>
+
+      <p>
+        <strong>Github:</strong>
+        <%= @project.github %>
+      </p>
+
+      <p>
+        <strong>Twitter:</strong>
+        <%= @project.twitter %>
+      </p>
+
+      <p>
+        <strong>Url:</strong>
+        <%= @project.url %>
+      </p>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <p>
+      <strong>Startdate:</strong>
+        <%= @project.startdate %>
+      </p>
+
+      <p>
+        <strong>Enddate:</strong>
+        <%= @project.enddate %>
+      </p>
+
+      <p>
+        <strong>Abstract:</strong>
+        <%= @project.abstract %>
+      </p>
+      <h3>Technologies</h3>
+      <ul>
+       <% @technologies.each do |technology| %>
+          <li><%= technology.name %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <%= link_to 'Edit', edit_project_path(@project), class: "btn btn-raised btn-info" %> |
+    <%= link_to 'Back', projects_path, class: "btn btn-raised btn-danger" %>
+  </div>
+</main>

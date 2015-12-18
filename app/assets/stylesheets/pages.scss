@@ -18,3 +18,112 @@ div.container.paye {
     }
   }
 }
+
+main.container.show-project {
+  background-color: #FFF;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  min-height: 500px;
+
+  div.row {
+    h1 {
+      margin: 20px auto;
+    }
+
+    div.container-picture {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    div.last-update {
+      border-top: 1px solid #666666;
+      margin-top: 30px;
+      padding-top: 30px;
+      font-size: 1.2em;
+      color: #666666;
+
+      a {
+        display: inline-block;
+        position: relative;
+        margin: 0 10px;
+
+        span.info {
+          position: absolute;
+          display: block;
+          background-color: #009688;
+          transition: all 0.5s;
+          border-radius: 250px;
+          line-height: 15px;
+          width: 150px;
+          padding: 15px;
+          font-size: 0.5em;
+          text-transform: capitalize;
+          left: -45px;
+          bottom: 0px;
+          z-index: -6;
+        }
+      }
+
+      a:hover {
+        span.info {
+          z-index: 6;
+          bottom: 60px;
+        }
+      }
+
+      p {
+        display: inline-block;
+        float: right;
+      }
+    }
+
+    div.container-info {
+      p.description {
+        margin: 20px auto;
+      }
+      p {
+        font-size: 1.2em;
+
+        span.date {
+          color: $primary-color;
+        }
+
+        span.definition {
+          font-weight: bold;
+        }
+      }
+    }
+
+    div.container-list {
+      min-height: 42px;
+      margin: 20px 0;
+
+      ul {
+        display: inline-block;
+        list-style-type: none;
+
+        li {
+          transition: all 0.5s;
+          border-bottom: 2px solid $primary-color;
+          background-color: #e4e4e4; // #dfdfdf
+          padding: 0 12px;
+          display: inline-block;
+          border-radius: 16px;
+          height: 32px;
+          margin: 5px;
+
+          span {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.6);
+            line-height: 32px;
+          }
+        }
+      }
+    }
+
+  }
+}

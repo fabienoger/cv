@@ -1,33 +1,68 @@
 main.portfolio {
   margin-top: 70px;
   margin-bottom: 20px;
-  background-color: #FFF;
+  background-color: #fff;
+
   h1 {
     color: $bg-color;
+    margin: 30px auto;
+
+    i {
+      background-color: $primary-color;
+      color: #FFF;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
   }
   div.thumbnail {
-    transition: 0.5s;
+    transition: all 0.5s;
     transition-property: background-color;
     border-radius: 0px;
+    background-color: #dfdfdf;
+    border-bottom: 4px solid $primary-color;
+
+    h2 {
+      margin: 20px auto;
+    }
+
     div.caption {
+      div.action {
+        margin: 20px auto;
+      }
+
       ul {
+        margin: 20px auto;
         padding-left: 0px;
         list-style-type: none;
+
         li {
-          border: 2px solid $primary-color;
-          background-color: #dfdfdf;
-          padding: 10px;
+          transition: all 0.5s;
+          background-color: #FFF; // #dfdfdf
+          padding: 0 12px;
           display: inline-block;
+          border-radius: 16px;
+          height: 32px;
+          margin: 5px;
+          border-bottom: 2px solid $primary-color;
+
+          span {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.6);
+            line-height: 32px;
+          }
         }
       }
     }
   }
   div.thumbnail:hover {
-    background-color: #dfdfdf;
-    border-bottom: 4px solid $primary-color;
+    background-color: #cccccc;
     ul {
       li {
-        background-color: #FFF;
+        background-color: #e4e4e4 !important;
       }
     }
   }

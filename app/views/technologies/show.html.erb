@@ -1,0 +1,28 @@
+<main class="container technology">
+  <div class="row show">
+    <p id="notice"><%= notice %></p>
+    <div><%= image_tag @technology.picture.url(:thumb) %></div>
+    <p>
+      <strong>Name:</strong>
+      <%= @technology.name %>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <%= @technology.description %>
+    </p>
+
+    <p>
+      <strong>Link:</strong>
+      <%= @technology.link %>
+    </p>
+
+    <p>
+      <strong>Doc:</strong>
+      <%= @technology.doc %>
+    </p>
+
+    <%= link_to 'Edit', edit_technology_path(@technology), class: "btn btn-raised btn-info" %> |
+    <%= link_to 'Back', technologies_path, class: "btn btn-raised btn-danger" %>
+  </div>
+</main>

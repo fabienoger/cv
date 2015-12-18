@@ -6,7 +6,13 @@ main.contact {
     margin-top: 20px;
     color: $bg-color;
     i {
-      color: #D0DADC;
+      color: #FFF;
+      background-color: $primary-color;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      margin-right: 20px;
     }
   }
 

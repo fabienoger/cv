@@ -1,0 +1,39 @@
+<main class="container technology">
+  <div class="row index">
+    <p id="notice"><%= notice %></p>
+
+    <h1>Listing Technologies</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Picture</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Link</th>
+          <th>Doc</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @technologies.each do |technology| %>
+          <tr>
+            <td><%= image_tag technology.picture.url(:thumb) %></td>
+            <td><%= technology.name %></td>
+            <td><%= technology.description[0..20] %></td>
+            <td><a href="<%= technology.link %>" target="_blank"><i class="fa fa-link fa-3x"></i></a></td>
+            <td><a href="<%= technology.doc %>" target="_blank"><i class="fa fa-book fa-3x"></i></a></td>
+            <td><%= link_to '', technology, :class => "fa fa-eye fa-3x" %></td>
+            <td><%= link_to '', edit_technology_path(technology), :class => "fa fa-pencil fa-3x" %></td>
+            <td><%= link_to '', technology, method: :delete, data: { confirm: 'Are you sure?' }, :class => "fa fa-trash fa-3x" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Technology', new_technology_path, class: "btn btn-raised btn-success" %>
+  </div>
+</main>

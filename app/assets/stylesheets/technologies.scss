@@ -1,0 +1,19 @@
+main.container.technology {
+  margin-top: 70px;
+  background-color: #FFF;
+  div.row {
+    padding: 15px;
+  }
+
+  div.row.index {
+    table {
+      thead th, tbody td {
+        padding: 0 10px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

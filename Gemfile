@@ -50,3 +50,5 @@ gem 'bootstrap-material-design'
 gem 'figaro'
 gem 'rails-i18n', '~> 4.0.0'
 gem 'devise'
+gem "paperclip", "~> 4.3"
+gem 'colorize'
