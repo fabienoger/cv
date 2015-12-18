@@ -12,7 +12,7 @@
       </ul>
     </div>
     <div class="container-info col-md-8 col-md-offset-2">
-      <p class="description"><span class="definition">Description : </span><%= @project.description %></p>
+      <p class="description"><span class="definition">Description : </span><%= @project.description.html_safe %></p>
       <p>Le projet a duré du <span class="date"><%= @project.startdate %></span> au <span class="date"><%= @project.enddate %></span>.</p>
     </div>
     <div class="col-md-8 col-md-offset-2 last-update">
