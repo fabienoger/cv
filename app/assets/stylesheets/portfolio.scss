@@ -24,10 +24,20 @@ main.portfolio {
     background-color: #dfdfdf;
     border-bottom: 4px solid $primary-color;
 
+    h2 {
+      margin: 20px auto;
+    }
+
     div.caption {
+      div.action {
+        margin: 20px auto;
+      }
+
       ul {
+        margin: 20px auto;
         padding-left: 0px;
         list-style-type: none;
+
         li {
           transition: all 0.5s;
           background-color: #FFF; // #dfdfdf

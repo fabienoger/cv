@@ -2,7 +2,7 @@
   <div class="row">
     <h1 class="align-center"><%= @project.title %></h1>
     <div class="container-picture">
-      <%= image_tag @project.picture.url(:large) %>
+      <a href="<%= @project.url %>" target="_blank"><%= image_tag @project.picture.url(:large) %></a>
     </div>
     <div class="container-list">
       <ul class="col-md-6 col-md-offset-3">
@@ -11,12 +11,15 @@
         <% end %>
       </ul>
     </div>
-    <div class="container-info">
-      <p><span class="definition">Description : </span><%= @project.description %></p>
-      <a href="<%= @project.github %>" target="_blank" class="btn btn-primary btn-fab"><i class="fa fa-github"></i></a>
-      <a href="<%= @project.url %>" target="_blank" class="btn btn-primary btn-raised">Site &nbsp; <i class="fa fa-globe"></i></a>
-      <p><span class="definition">Start date : </span><%= @project.startdate %></p>
-      <p><span class="definition">End date : </span><%= @project.enddate %></p>
+    <div class="container-info col-md-8 col-md-offset-2">
+      <p class="description"><span class="definition">Description : </span><%= @project.description %></p>
+      <p>Le projet a duré du <span class="date"><%= @project.startdate %></span> au <span class="date"><%= @project.enddate %></span>.</p>
+    </div>
+    <div class="col-md-8 col-md-offset-2 last-update">
+      <a href="<%= @project.github %>" target="_blank" class="btn btn-primary btn-fab"><span class="info">GitHub</span><i class="fa fa-github"></i></a>
+      <a href="<%= @project.twitter %>" target="_blank" class="btn btn-primary btn-fab"><span class="info">Twitter</span><i class="fa fa-twitter"></i></a>
+      <a href="<%= @project.url %>" target="_blank" class="btn btn-primary btn-fab"><span class="info">Site Web</span><i class="fa fa-globe"></i></a>
+      <p class="align-right">Dernière modification le : <%= @project.updated_at.strftime("%C %b %Y à %H:%m") %></p>
     </div>
   </div>
 </main>

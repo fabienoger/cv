@@ -27,6 +27,9 @@ main.container.show-project {
   min-height: 500px;
 
   div.row {
+    h1 {
+      margin: 20px auto;
+    }
 
     div.container-picture {
       img {
@@ -35,8 +38,59 @@ main.container.show-project {
       }
     }
 
-    div.container-info {
+    div.last-update {
+      border-top: 1px solid #666666;
+      margin-top: 30px;
+      padding-top: 30px;
+      font-size: 1.2em;
+      color: #666666;
+
+      a {
+        display: inline-block;
+        position: relative;
+        margin: 0 10px;
+
+        span.info {
+          position: absolute;
+          display: block;
+          background-color: #009688;
+          transition: all 0.5s;
+          border-radius: 250px;
+          line-height: 15px;
+          width: 150px;
+          padding: 15px;
+          font-size: 0.5em;
+          text-transform: capitalize;
+          left: -45px;
+          bottom: 0px;
+          z-index: -6;
+        }
+      }
+
+      a:hover {
+        span.info {
+          z-index: 6;
+          bottom: 60px;
+        }
+      }
+
       p {
+        display: inline-block;
+        float: right;
+      }
+    }
+
+    div.container-info {
+      p.description {
+        margin: 20px auto;
+      }
+      p {
+        font-size: 1.2em;
+
+        span.date {
+          color: $primary-color;
+        }
+
         span.definition {
           font-weight: bold;
         }

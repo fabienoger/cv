@@ -14,9 +14,11 @@
                 <li><%= image_tag technology.picture.url(:thumb), size: "20" %>&nbsp; <span><%= technology.name %></span></li>
               <% end %>
             </ul>
-            <a href="<%= project.github %>" target="_blank" class="btn btn-fab btn-primary"><i class="fa fa-github"></i></a>
-            <a href="<%= project.url %>" target="_blank" class="btn btn-raised btn-primary">Site &nbsp; <i class="fa fa-globe"></i></a>
-            <a href="/project/<%= project.id %>" class="btn btn-raised btn-primary">Détails &nbsp; <i class="fa fa-arrow-right"></i></a>
+            <div class="action">
+              <a href="<%= project.github %>" target="_blank" class="btn btn-fab btn-primary"><i class="fa fa-github"></i></a>
+              <a href="<%= project.url %>" target="_blank" class="btn btn-raised btn-primary">Site &nbsp; <i class="fa fa-globe"></i></a>
+              <a href="/project/<%= project.id %>" class="btn btn-raised btn-primary">Détails &nbsp; <i class="fa fa-arrow-right"></i></a>
+            </div>
           </div>
         </div>
       </div>
