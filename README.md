@@ -13,13 +13,13 @@ rake db:create
 rake db:migrate
 ```
 
-For the mail system you need to configure the smtp at config/application.rb
+For the mail system you need to configure the smtp at config/application.rb.
 I use the gem Figaro so you need to run :
 ```shell
 figaro install
 ```
-And set the environment(s) variable(s) at config/application.yml
-And of course launch rails application
+And set the environment(s) variable(s) at config/application.ymli.
+And of course launch rails application.
 ```shell
 rails s
 ```
