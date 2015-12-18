@@ -11,6 +11,7 @@ main.portfolio {
     transition-property: background-color;
     border-radius: 0px;
     background-color: #CCCCCC;
+    border-bottom: 4px solid $primary-color;
 
     div.caption {
       ul {
@@ -37,7 +38,6 @@ main.portfolio {
   }
   div.thumbnail:hover {
     background-color: #dfdfdf;
-    border-bottom: 4px solid $primary-color;
     ul {
       li {
         background-color: #FFF !important;

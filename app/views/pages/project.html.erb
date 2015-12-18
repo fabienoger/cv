@@ -1,16 +1,22 @@
 <main class="container show-project">
   <div class="row">
     <h1 class="align-center"><%= @project.title %></h1>
-    <%= image_tag @project.picture.url(:medium) %>
-    <ul>
-      <% @technologies.each do |technology| %>
-        <li><%= image_tag technology.picture.url(:thumb), size: "20" %>&nbsp; <span><%= technology.name %></span></li>
-      <% end %>
-    </ul>
-    <p><%= @project.description %></p>
-    <a href="<%= @project.github %>" target="_blank" class="btn btn-primary btn-fab"><i class="fa fa-github"></i></a>
-    <a href="<%= @project.url %>" target="_blank" class="btn btn-primary btn-raised">Site &nbsp; <i class="fa fa-globe"></i></a>
-    <p><strong>Start date : </strong><%= @project.startdate %></p>
-    <p><strong>End date : </strong><%= @project.enddate %></p>
+    <div class="container-picture">
+      <%= image_tag @project.picture.url(:large) %>
+    </div>
+    <div class="container-list">
+      <ul class="col-md-6 col-md-offset-3">
+        <% @technologies.each do |technology| %>
+          <li><%= image_tag technology.picture.url(:thumb), size: "20" %>&nbsp; <span><%= technology.name %></span></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="container-info">
+      <p><span class="definition">Description : </span><%= @project.description %></p>
+      <a href="<%= @project.github %>" target="_blank" class="btn btn-primary btn-fab"><i class="fa fa-github"></i></a>
+      <a href="<%= @project.url %>" target="_blank" class="btn btn-primary btn-raised">Site &nbsp; <i class="fa fa-globe"></i></a>
+      <p><span class="definition">Start date : </span><%= @project.startdate %></p>
+      <p><span class="definition">End date : </span><%= @project.enddate %></p>
+    </div>
   </div>
 </main>

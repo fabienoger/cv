@@ -28,25 +28,48 @@ main.container.show-project {
 
   div.row {
 
-    ul {
-      padding-left: 0px;
-      list-style-type: none;
-      li {
-        transition: all 0.5s;
-        background-color: #e4e4e4; // #dfdfdf
-        padding: 0 12px;
-        display: inline-block;
-        border-radius: 16px;
-        height: 32px;
-        margin: 5px;
+    div.container-picture {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
 
-        span {
-          font-size: 13px;
-          font-weight: 600;
-          color: rgba(0, 0, 0, 0.6);
-          line-height: 32px;
+    div.container-info {
+      p {
+        span.definition {
+          font-weight: bold;
         }
       }
     }
+
+    div.container-list {
+      min-height: 42px;
+      margin: 20px 0;
+
+      ul {
+        display: inline-block;
+        list-style-type: none;
+
+        li {
+          transition: all 0.5s;
+          border-bottom: 2px solid $primary-color;
+          background-color: #e4e4e4; // #dfdfdf
+          padding: 0 12px;
+          display: inline-block;
+          border-radius: 16px;
+          height: 32px;
+          margin: 5px;
+
+          span {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.6);
+            line-height: 32px;
+          }
+        }
+      }
+    }
+
   }
 }
