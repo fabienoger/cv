@@ -1,12 +1,12 @@
 <main class="container portfolio">
-  <h1 class="align-center">Portfolio</h1>
+  <h1 class="align-center"><i class="fa fa-book fa-left"></i>Portfolio</h1>
   <div class="row">
     <% @projects.each do |project| %>
       <% @links = ProjectTechnology.where(:project_id => project.id) %>
       <div class="col-md-4">
         <div class="thumbnail">
           <h2 class="align-center"><%= project.title %></h2>
-          <a class="project-picture" href="<%= project.url %>" target="_blank"><%= image_tag project.picture.url(:medium) %></a>
+          <a class="project-picture" href="/project/<%= project.id %>"><%= image_tag project.picture.url(:medium) %></a>
           <div class="caption">
             <ul>
               <% @links.each do |link| %>
@@ -14,7 +14,7 @@
                 <li><%= image_tag technology.picture.url(:thumb), size: "20" %>&nbsp; <span><%= technology.name %></span></li>
               <% end %>
             </ul>
-            <a href="<%= project.github %>" class="btn btn-fab btn-primary"><i class="fa fa-github"></i></a>
+            <a href="<%= project.github %>" target="_blank" class="btn btn-fab btn-primary"><i class="fa fa-github"></i></a>
             <a href="<%= project.url %>" target="_blank" class="btn btn-raised btn-primary">Site &nbsp; <i class="fa fa-globe"></i></a>
             <a href="/project/<%= project.id %>" class="btn btn-raised btn-primary">Détails &nbsp; <i class="fa fa-arrow-right"></i></a>
           </div>
