@@ -5,7 +5,7 @@
       <a href="<%= @project.url %>" target="_blank"><%= image_tag @project.picture.url(:large) %></a>
     </div>
     <div class="container-list">
-      <ul class="col-md-6 col-md-offset-3">
+      <ul class="col-md-8 col-md-offset-2">
         <% @technologies.each do |technology| %>
           <li><%= image_tag technology.picture.url(:thumb), size: "20" %>&nbsp; <span><%= technology.name %></span></li>
         <% end %>
