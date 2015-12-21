@@ -2,7 +2,7 @@
   <div class="row">
     <h1 class="align-center"><%= @project.title %></h1>
     <div class="container-picture">
-      <a href="<%= @project.url %>" target="_blank"><%= image_tag @project.picture.url(:large) %></a>
+      <a href="<%= @project.url %>" target="_blank"><%= image_tag @project.picture.url(:large), class: "image-project" %></a>
     </div>
     <div class="container-list">
       <ul class="col-md-8 col-md-offset-2">
