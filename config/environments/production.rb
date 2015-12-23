@@ -82,8 +82,8 @@ Rails.application.configure do
       :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
       :enable_starttls_auto => true, # detects and uses STARTTLS
       :user_name => "postmaster@fabienoger.com",
-      :password  => ENV["MANDRILL_PASSWORD"], # SMTP password is any valid API key
-      :authentication => 'login', # Mandrill supports 'plain' or 'login'
+      :password  => ENV["MAILGUN_PASSWORD"], # SMTP password is any valid API key
+      :authentication => 'plain', # Mandrill supports 'plain' or 'login'
       :domain => 'fabienoger.com', # your domain to identify your server when connecting
     }
 
@@ -91,6 +91,6 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default :charset => "utf-8"
 end

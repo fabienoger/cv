@@ -31,7 +31,7 @@ module Cv
       :enable_starttls_auto => true, # detects and uses STARTTLS
       :user_name => "postmaster@fabienoger.com",
       :password  => ENV["MAILGUN_PASSWORD"], # SMTP password is any valid API key
-      :authentication => 'login', # Mandrill supports 'plain' or 'login'
+      :authentication => 'plain', # Mandrill supports 'plain' or 'login'
       :domain => 'fabienoger.com', # your domain to identify your server when connecting
     }
   end
