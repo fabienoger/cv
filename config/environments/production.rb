@@ -78,12 +78,19 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.smtp_settings = {
-      :address   => "smtp.mandrillapp.com",
+      :address   => "smtp.mailgun.org",
       :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
       :enable_starttls_auto => true, # detects and uses STARTTLS
-      :user_name => "spodze@gmail.com",
+      :user_name => "postmaster@fabienoger.com",
       :password  => ENV["MANDRILL_PASSWORD"], # SMTP password is any valid API key
       :authentication => 'login', # Mandrill supports 'plain' or 'login'
       :domain => 'fabienoger.com', # your domain to identify your server when connecting
     }
+
+  config.action_mailer.default_url_options = {:host => 'http://vps202541.ovh.net/'}
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default :charset => "utf-8"
 end
