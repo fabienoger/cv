@@ -2,10 +2,10 @@
   <div class="row">
     <h1 class="align-center"><%= @project.title %></h1>
     <div class="container-picture">
-      <a href="<%= @project.url %>" target="_blank"><%= image_tag @project.picture.url(:large) %></a>
+      <a href="<%= @project.url %>" target="_blank"><%= image_tag @project.picture.url(:large), class: "image-project" %></a>
     </div>
     <div class="container-list">
-      <ul class="col-md-6 col-md-offset-3">
+      <ul class="col-md-8 col-md-offset-2">
         <% @technologies.each do |technology| %>
           <li><%= image_tag technology.picture.url(:thumb), size: "20" %>&nbsp; <span><%= technology.name %></span></li>
         <% end %>

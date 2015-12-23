@@ -32,7 +32,8 @@ main.container.show-project {
     }
 
     div.container-picture {
-      img {
+      img.image-project {
+        max-width: 100%;
         display: block;
         margin: 0 auto;
       }

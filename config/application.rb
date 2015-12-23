@@ -26,11 +26,11 @@ module Cv
     config.active_record.raise_in_transactional_callbacks = true
 
     config.action_mailer.smtp_settings = {
-      :address   => "smtp.mandrillapp.com",
+      :address   => "smtp.mailgun.org",
       :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
       :enable_starttls_auto => true, # detects and uses STARTTLS
-      :user_name => "spodze@gmail.com",
-      :password  => ENV["MANDRILL_PASSWORD"], # SMTP password is any valid API key
+      :user_name => "postmaster@fabienoger.com",
+      :password  => ENV["MAILGUN_PASSWORD"], # SMTP password is any valid API key
       :authentication => 'login', # Mandrill supports 'plain' or 'login'
       :domain => 'fabienoger.com', # your domain to identify your server when connecting
     }
