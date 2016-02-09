@@ -1,5 +1,9 @@
 class PagesController < ApplicationController
   def home
+    puts "====================================".green
+    puts "Ip => #{request.remote_ip()}".red
+    puts "#{request.env['HTTP_USER_AGENT']}".red
+    puts "====================================".green
   end
 
   def project
