@@ -54,6 +54,7 @@ main.container.show-project {
         span.info {
           position: absolute;
           display: block;
+          visibility: hidden;
           background-color: #009688;
           transition: all 0.5s;
           border-radius: 250px;
@@ -70,6 +71,7 @@ main.container.show-project {
 
       a:hover {
         span.info {
+          visibility: visible;
           z-index: 6;
           bottom: 60px;
         }
