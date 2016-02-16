@@ -2,6 +2,7 @@
   <div class="row show">
     <p id="notice"><%= notice %></p>
     <h1 class="align-center"><%= @project.title %></h1>
+    <h3 class="align-center">Views count => <%= @project.views %></h3>
     <div class="col-md-6 col-xs-12">
       <div>
         <%= image_tag @project.picture.url(:medium) %>
