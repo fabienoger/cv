@@ -13,6 +13,11 @@ class PagesController < ApplicationController
     links.each do |link|
       @technologies.push(Technology.find(link.technology_id))
     end
+
+    # Increase views count
+    nbViews = @project.views + 1
+    @project.views = nbViews
+    @project.save
   end
 
   def portfolio
