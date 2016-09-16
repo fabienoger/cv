@@ -1,0 +1,16 @@
+fabienoger-app:
+  restart: always
+  build: .
+  links:
+    - fabienoger-db
+  volumes:
+    - .:/docker/rails_app
+  ports:
+    - 3000:3000
+  command: bash -c "bundle install && rails generate devise:install && bundle exec rails s -p 3000 -e production -b '0.0.0.0'"
+
+fabienoger-db:
+  restart: always
+  image: postgres
+  volumes:
+   - ./db:/data/db
