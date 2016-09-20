@@ -48,7 +48,7 @@ end
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'font-awesome-sass'
 gem 'bootstrap-material-design'
-gem 'figaro', github: 'laserlemon/figaro'
+#gem 'figaro', github: 'laserlemon/figaro'
 gem 'rails-i18n', '~> 4.0.0'
 gem 'devise'
 gem "paperclip", "~> 4.3"
